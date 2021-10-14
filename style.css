@@ -1,0 +1,18 @@
+body{
+    background-color: aqua;
+    display: inline;
+}
+
+header{
+    height: 100px;
+    background-color: blue;
+    display: inline;
+}
+
+
+
+nav{
+    height: 100px;
+    background-color: chartreuse;
+    display: inline;
+}
