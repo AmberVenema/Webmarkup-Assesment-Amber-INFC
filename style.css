@@ -1,25 +1,30 @@
+/* elementen die index,bestdestinations,tickets en contact gemeen hebben */
 body{
     background-color: aqua;
     display: flex;
     flex-wrap: wrap;
-    padding: 0;   
+    padding: 0; 
+    margin: 0;  
 }
 
 header.upper-header{
     height: 300px;
     width: 100%;
+    float: left;
     background-color: blue;   
 }
 
 nav{
     height: 100px;
     width: 100%;
+    float: left;
     background-color: red;
 }
 
 promotion-video{
     height: 300px;
     width: 100%;
+    float: left;
     background-color:palevioletred;
 }
 
@@ -28,14 +33,18 @@ video{
 }
 
 article{
-    height: 500px;
+    height: 700px;
+    width: 80%;
+    padding: 10px; 
+    float: left;
     background-color: purple;
 }
 
 section{
-    height: 400px;
-    padding: 50px;
-   
+    height: 650px;
+    width: 700px;
+    padding: 10px; 
+    float: left;
     background-color: royalblue;
 }
 
@@ -47,8 +56,20 @@ h2{
     background-color: orange;
 }
 
+h3{
+    background-color: white;
+    width: 600px;
+}
+
 p.story{
+    width: 600px;
     background-color: olive;
+    line-height: 1.2em;
+}
+
+p.copyright-photo{
+    background-color: hotpink;
+    float: left;
 }
 
 img.photo-destination{
@@ -58,26 +79,167 @@ img.photo-destination{
 }
 
 footer.footer-article{
-    height: 100px;
+    height: 400px;
+    width: 600px;
+    float: left;
     clear: both;
     background-color: rgb(168, 42, 20);
 }
 
 aside{
-    height: 200px;
+    height: 300px;
+    width: 20%;
     flex-shrink: 0;   
     flex-grow: 0;
-    float: right;
+    left: 1235px;
+    top:400px;
+    position: fixed;
+    float: left;
     background-color: steelblue;
 }
 
 footer{
     height: 50px;
     width: 80%;
+    float: left;
+    background: lightcoral;
+}
+
+p.cookie{
+    color: #fff;opacity:1;
 }
 
 cookie-statement{
     height: 50px;
     width: 20%;
+    left: 1235px;
+    top: 672px;
+    position: fixed;
+    float: left; 
+    background-color: rgb(255, 170,	0);opacity:0.5;
 }
 
+
+
+/* bestdestinations.html */
+header.destinations{
+    background-color: lightseagreen;
+    grid-area: headerTag;
+}
+
+nav.destinations{
+    background-color: magenta;
+    grid-area: navTag;
+}
+
+article-destination{
+    height: 500px;
+    width: 80%;
+    float: left;
+    background-color: purple;
+    grid-area: article1Tag;
+}
+
+article-destination2{
+    height: 500px;
+    width: 80%;
+    float: left;
+    background-color: yellow;
+    grid-area: article2Tag;
+}
+
+article-destination3{
+    height: 500px;
+    width: 80%;
+    float: left;
+    background-color: green;
+    grid-area: article3Tag;
+}
+
+article-destination4{
+    height: 500px;
+    width: 80%;
+    float: left;
+    background-color: orange;
+    grid-area: article4Tag;
+}
+
+article-destination5{
+    height: 500px;
+    width: 80%;
+    float: left;
+    background-color: pink;
+    grid-area: article5Tag;
+}
+
+article-destination6{
+    height: 500px;
+    width: 80%;
+    float: left;
+    background-color: maroon;
+    grid-area: article6Tag;
+}
+
+aside-product1{
+    height: 200px;
+    width: 20%;
+    flex-shrink: 0;   
+    flex-grow: 0;
+    float: left;
+    background-color: black;
+    grid-area: aside1Tag;
+}
+
+aside-product2{
+    height: 200px;
+    width: 20%;
+    flex-shrink: 0;   
+    flex-grow: 0;
+    float: left;
+    background-color: grey;
+    grid-area: aside2Tag;
+}
+
+aside-product3{
+    height: 200px;
+    width: 20%;
+    flex-shrink: 0;   
+    flex-grow: 0;
+    float: left;
+    background-color: goldenrod;
+    grid-area: aside3Tag;
+}
+
+footer.destinations{
+    background-color: mediumaquamarine;
+    grid-area: footerTag;
+}
+
+cookie-statement.destinations{
+    background-color: indigo;
+    grid-area: cookieTag;
+}
+
+#grid-container{
+    background-color: lawngreen;
+    padding: 10px;
+
+    display: grid;
+    grid-gap: 10px;
+
+    /* #column1  #column2  #column3  #column4  #column5  #column6 */
+    grid-template-areas: 
+    'headerTag  headerTag  headerTag  headerTag  headerTag  headerTag'
+    'navTag     navTag     navTag     navTag     navTag     navTag'
+    'article2Tag  article2Tag  article2Tag  article1Tag  article1Tag  article3Tag'
+    'article2Tag  article2Tag  article2Tag  article1Tag  article1Tag  article3Tag'
+    'article5Tag  article5Tag  article5Tag  article1Tag  article1Tag  article3Tag'
+    'article5Tag  article5Tag  article5Tag  article1Tag  article1Tag  article4Tag'
+    'article5Tag  article5Tag  article5Tag  article1Tag  article1Tag  article4Tag'
+    'article5Tag  article5Tag  article5Tag  article1Tag  article1Tag  article4Tag'
+    'article5Tag  article5Tag  article5Tag  article6Tag  article6Tag  article6Tag'
+    'aside1Tag    aside1Tag    aside1Tag    aside2Tag    aside2Tag    aside3Tag'
+    'aside1Tag    aside1Tag    aside1Tag    aside2Tag    aside2Tag    aside3Tag'
+    'footerTag    footerTag    footerTag    footerTag    footerTag    cookieTag'
+    'footerTag    footerTag    footerTag    footerTag    footerTag    cookieTag';
+}
