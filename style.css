@@ -1,52 +1,75 @@
-/* elementen die index,bestdestinations,tickets en contact gemeen hebben */
+/* index*/
+
+/* media querie pc */
+@media screen and (min-width: 930px){
 body{
     background-color: aqua;
-    display: flex;
+    display: flex;    
     flex-wrap: wrap;
     padding: 0; 
     margin: 0;  
 }
 
 header.upper-header{
-    height: 300px;
-    width: 100%;
-    float: left;
+    flex-basis: 100%;   
+    flex-shrink: 0;   
+    flex-grow: 0;
     background-color: blue;   
 }
 
 nav{
-    height: 100px;
-    width: 100%;
-    float: left;
+    flex-basis: 100%;   
+    flex-shrink: 0;   
+    flex-grow: 0;
     background-color: red;
 }
 
 promotion-video{
-    height: 300px;
-    width: 100%;
-    float: left;
+    flex-basis: 100%; 
+    padding: 10px;
+    margin: 0px;  
+    flex-shrink: 0;   
+    flex-grow: 0;
     background-color:palevioletred;
 }
 
 video{
-    float: left;
+float:left;
 }
 
-article{
-    height: 700px;
-    width: 80%;
-    padding: 10px; 
-    float: left;
-    background-color: purple;
+section.flexParent{
+    flex-basis: 80%;   
+    padding: 10px;
+    display: flex;    
+    flex-wrap: wrap; 
+    background-color: purple;  
 }
 
-section{
-    height: 650px;
-    width: 700px;
+article-one{
+    flex-basis: 60%;   
+    flex-shrink: 0;   
+    flex-grow: 0;
     padding: 10px; 
-    float: left;
-    background-color: royalblue;
+    background-color: royalblue; 
 }
+
+article-two{
+    flex-basis: 60%;   
+    flex-shrink: 0;   
+    flex-grow: 0;
+    padding: 10px; 
+    background-color: royalblue; 
+}
+
+article-three{
+    flex-basis: 60%;    
+    flex-shrink: 0;   
+    flex-grow: 0;
+    padding: 10px; 
+    background-color: royalblue; 
+}
+
+
 
 h1{
     background-color: violet;
@@ -58,18 +81,16 @@ h2{
 
 h3{
     background-color: white;
-    width: 600px;
 }
 
 p.story{
-    width: 600px;
     background-color: olive;
     line-height: 1.2em;
 }
 
 p.copyright-photo{
     background-color: hotpink;
-    float: left;
+    float: right;
 }
 
 img.photo-destination{
@@ -79,29 +100,25 @@ img.photo-destination{
 }
 
 footer.footer-article{
-    height: 400px;
-    width: 600px;
     float: left;
     clear: both;
     background-color: rgb(168, 42, 20);
 }
 
 aside{
-    height: 300px;
-    width: 20%;
+    flex-basis: 20%;   
     flex-shrink: 0;   
     flex-grow: 0;
-    left: 1235px;
-    top:400px;
+    left: 1229px;
+    top:372px;
     position: fixed;
     float: left;
     background-color: steelblue;
 }
 
-footer{
-    height: 50px;
-    width: 80%;
-    float: left;
+footer-body{
+    width: 81%;
+    height: 50px;  
     background: lightcoral;
 }
 
@@ -110,13 +127,153 @@ p.cookie{
 }
 
 cookie-statement{
-    height: 50px;
-    width: 20%;
-    left: 1235px;
-    top: 672px;
+    width: 20%;  
+    height: 50px; 
+    left: 1229px;
+    top: 655px;
     position: fixed;
-    float: left; 
     background-color: rgb(255, 170,	0);opacity:0.5;
+}
+
+}
+
+@media screen and (min-width: 720px) and (max-width:929px){
+    body{
+        background-color: aqua;
+        display: flex;    
+        flex-wrap: wrap;
+        padding: 0; 
+        margin: 10;  
+    }
+    
+    header.upper-header{
+        height: 300px;
+        width: 100%;
+        order: 1;
+        background-color: blue;   
+    }
+    
+    nav{
+        height: 100px;
+        width: 100%;
+    
+        background-color: red;
+    }
+    
+    promotion-video{
+        height: 300px;
+        width: 100%;
+        background-color:palevioletred;
+    }
+    
+    video{
+    float:left;
+    }
+    
+    section.flexParent{
+        height: 2013px;
+        width: 80%;
+        padding: 10px;
+        display: flex;    
+        flex-wrap: wrap; 
+        background-color: purple;  
+    }
+    
+    article-one{
+        flex-basis: 98%;   
+        flex-shrink: 0;   
+        flex-grow: 0;
+        padding: 10px; 
+        background-color: royalblue; 
+    }
+    
+    article-two{
+        flex-basis: 98%;   
+        flex-shrink: 0;   
+        flex-grow: 0;
+        padding: 10px; 
+        background-color: royalblue; 
+    }
+    
+    article-three{
+        flex-basis: 98%;    
+        flex-shrink: 0;   
+        flex-grow: 0;
+        padding: 10px; 
+        background-color: royalblue; 
+    }
+    
+    
+    
+    h1{
+        background-color: violet;
+    }
+    
+    h2{
+        background-color: orange;
+    }
+    
+    h3{
+        background-color: white;
+        width: 600px;
+    }
+    
+    p.story{
+        width: 600px;
+        background-color: olive;
+        line-height: 1.2em;
+    }
+    
+    p.copyright-photo{
+        background-color: hotpink;
+        float: left;
+    }
+    
+    img.photo-destination{
+        height: 300px;
+        width: 500px;
+        float: right;
+    }
+    
+    footer.footer-article{
+        height: 400px;
+        width: 600px;
+        float: left;
+        clear: both;
+        background-color: rgb(168, 42, 20);
+    }
+    
+    aside{
+        width: 20%;
+        flex-shrink: 0;   
+        flex-grow: 0;
+        left: 1230px;
+        top:372px;
+        position: fixed;
+        float: left;
+        background-color: steelblue;
+    }
+    
+    footer{
+        display: flex;    
+        flex-wrap: wrap; 
+        flex-basis: 80%;
+        background: lightcoral;
+    }
+    
+    p.cookie{
+        color: #fff;opacity:1;
+    }
+    
+    cookie-statement{
+        height: 50px;
+        width: 20%;
+        left: 1230px;
+        top: 672px;
+        position: fixed;
+        float: left; 
+        background-color: rgb(255, 170,	0);opacity:0.5;
+    }
 }
 
 
