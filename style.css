@@ -2,7 +2,7 @@
 
 /* media querie pc */
 @media screen and (min-width: 930px){
-body{
+#index {
     background-color: aqua;
     display: flex;    
     flex-wrap: wrap;
@@ -10,21 +10,22 @@ body{
     margin: 0;  
 }
 
-header.upper-header{
+#index header.upper-header{
     flex-basis: 100%;   
     flex-shrink: 0;   
     flex-grow: 0;
+    padding: 30px;
     background-color: blue;   
 }
 
-nav{
+#index nav{
     flex-basis: 100%;   
     flex-shrink: 0;   
     flex-grow: 0;
     background-color: red;
 }
 
-promotion-video{
+#index promotion-video{
     flex-basis: 100%; 
     padding: 10px;
     margin: 0px;  
@@ -33,11 +34,11 @@ promotion-video{
     background-color:palevioletred;
 }
 
-video{
+#index video{
 float:left;
 }
 
-section.flexParent{
+#index section.flexParent{
     flex-basis: 80%;   
     padding: 10px;
     display: flex;    
@@ -45,7 +46,7 @@ section.flexParent{
     background-color: purple;  
 }
 
-article-one{
+#index article-one{
     flex-basis: 60%;   
     flex-shrink: 0;   
     flex-grow: 0;
@@ -53,7 +54,7 @@ article-one{
     background-color: royalblue; 
 }
 
-article-two{
+#index article-two{
     flex-basis: 60%;   
     flex-shrink: 0;   
     flex-grow: 0;
@@ -61,7 +62,7 @@ article-two{
     background-color: royalblue; 
 }
 
-article-three{
+#index article-three{
     flex-basis: 60%;    
     flex-shrink: 0;   
     flex-grow: 0;
@@ -71,210 +72,371 @@ article-three{
 
 
 
-h1{
+#index h1{
     background-color: violet;
 }
 
-h2{
+#index h2{
     background-color: orange;
 }
 
-h3{
+#index h3{
     background-color: white;
 }
 
-p.story{
+#index p.story{
     background-color: olive;
     line-height: 1.2em;
 }
 
-p.copyright-photo{
+#index p.copyright-photo{
     background-color: hotpink;
     float: right;
 }
 
-img.photo-destination{
-    height: 300px;
-    width: 500px;
+#index img.photo-destination{
+    height: 200px;
+    width: 380px;
     float: right;
 }
 
-footer.footer-article{
+#index footer.footer-article{
     float: left;
     clear: both;
     background-color: rgb(168, 42, 20);
 }
 
-aside{
+#index aside{
     flex-basis: 20%;   
     flex-shrink: 0;   
     flex-grow: 0;
-    left: 1229px;
-    top:372px;
+    left: 1235px;
+    top: 274px;
+    padding: 13px;
     position: fixed;
     float: left;
     background-color: steelblue;
 }
 
-footer-body{
-    width: 81%;
+#index ol{
+    width: 80%;
+    list-style-type: circle;
+  }
+
+#index footer-body{
+    width: 80%;
+    padding: 10px;
     height: 50px;  
     background: lightcoral;
 }
 
-p.cookie{
+#index p.cookie{
     color: #fff;opacity:1;
 }
 
-cookie-statement{
+#index cookie-statement{
     width: 20%;  
-    height: 50px; 
-    left: 1229px;
-    top: 655px;
+    height: 51px; 
+    left: 1235px;
+    top: 634px;
+    padding: 10px;
     position: fixed;
     background-color: rgb(255, 170,	0);opacity:0.5;
 }
 
-}
+}/* END media querie pc */
 
+
+
+/* media querie tablet */
 @media screen and (min-width: 720px) and (max-width:929px){
     body{
         background-color: aqua;
         display: flex;    
         flex-wrap: wrap;
         padding: 0; 
-        margin: 10;  
+        margin: 0;  
     }
     
-    header.upper-header{
+    #index header.upper-header{
         height: 300px;
         width: 100%;
+        padding: 30px;
         order: 1;
         background-color: blue;   
     }
     
-    nav{
+    #index nav{
         height: 100px;
         width: 100%;
-    
+        order: 2;
         background-color: red;
     }
-    
-    promotion-video{
-        height: 300px;
-        width: 100%;
-        background-color:palevioletred;
-    }
-    
-    video{
-    float:left;
-    }
-    
-    section.flexParent{
-        height: 2013px;
-        width: 80%;
+
+    #index aside{
         padding: 10px;
-        display: flex;    
-        flex-wrap: wrap; 
-        background-color: purple;  
-    }
-    
-    article-one{
-        flex-basis: 98%;   
-        flex-shrink: 0;   
-        flex-grow: 0;
-        padding: 10px; 
-        background-color: royalblue; 
-    }
-    
-    article-two{
-        flex-basis: 98%;   
-        flex-shrink: 0;   
-        flex-grow: 0;
-        padding: 10px; 
-        background-color: royalblue; 
-    }
-    
-    article-three{
-        flex-basis: 98%;    
-        flex-shrink: 0;   
-        flex-grow: 0;
-        padding: 10px; 
-        background-color: royalblue; 
-    }
-    
-    
-    
-    h1{
-        background-color: violet;
-    }
-    
-    h2{
-        background-color: orange;
-    }
-    
-    h3{
-        background-color: white;
-        width: 600px;
-    }
-    
-    p.story{
-        width: 600px;
-        background-color: olive;
-        line-height: 1.2em;
-    }
-    
-    p.copyright-photo{
-        background-color: hotpink;
-        float: left;
-    }
-    
-    img.photo-destination{
-        height: 300px;
-        width: 500px;
-        float: right;
-    }
-    
-    footer.footer-article{
-        height: 400px;
-        width: 600px;
-        float: left;
-        clear: both;
-        background-color: rgb(168, 42, 20);
-    }
-    
-    aside{
-        width: 20%;
-        flex-shrink: 0;   
-        flex-grow: 0;
-        left: 1230px;
-        top:372px;
-        position: fixed;
+        width: 100%;
+        height : 140px;
+        order: 3;
         float: left;
         background-color: steelblue;
     }
     
-    footer{
+    #index promotion-video{
+        padding: 20px;
+        height: 440px;
+        width: 100%;
+        order: 4;
+        background-color:palevioletred;
+    }
+    
+    #index video{
+    float:left;
+    order: 4;
+    }
+    
+    #index section.flexParent{
+        height: 1290px;
+        width: 100%;
+        padding: 10px;
+        display: flex; 
+        order: 5;   
+        flex-wrap: wrap; 
+        background-color: purple;  
+    }
+    
+    #index article-one{
+        flex-basis: 98%;
+        height: 430px;   
+        padding: 10px;
+        order: 3; 
+        background-color: royalblue; 
+    }
+    
+    #index article-two{
+        flex-basis: 98%; 
+        height: 430px;    
+        padding: 10px;
+        order: 2; 
+        background-color: royalblue; 
+    }
+    
+    #index article-three{
+        flex-basis: 98%; 
+        height: 430px;     
+        padding: 10px; 
+        order: 1;
+        background-color: royalblue; 
+    }
+    
+    
+    
+    #index h1{
+        background-color: violet;
+    }
+    
+    #index h2{
+        background-color: orange;
+    }
+    
+    #index h3{
+        background-color: white;
+        width: 100%;
+    }
+    
+    #index p.story{
+        width: 800px;
+        background-color: olive;
+        line-height: 1.2em;
+    }
+    
+    #index p.copyright-photo{
+        background-color: hotpink;
+        float: left;
+    }
+    
+    #index img.photo-destination{
+        height: 280px;
+        width: 380px;
+        float: left;
+    }
+    
+    #index footer.footer-article{
+        height: 60px;
+        width: 380px;
+        float: left;
+        clear: both;
+        background-color: rgb(168, 42, 20);
+    }
+       
+    #index footer-body{
         display: flex;    
         flex-wrap: wrap; 
         flex-basis: 80%;
+        float: left; 
+        order: 6;
         background: lightcoral;
     }
     
-    p.cookie{
+    #index p.cookie{
         color: #fff;opacity:1;
     }
     
-    cookie-statement{
+    #index cookie-statement{
         height: 50px;
         width: 20%;
-        left: 1230px;
-        top: 672px;
-        position: fixed;
         float: left; 
+        order: 7;
         background-color: rgb(255, 170,	0);opacity:0.5;
     }
-}
+} /* END media querie tablet */
+
+
+/* media querie mobile */
+@media screen and (max-width: 719px){
+    body{
+        background-color: aqua;
+        display: flex;    
+        flex-wrap: wrap;
+        padding: 0; 
+        margin: 0;  
+    }
+
+    #index header.upper-header{
+        height: 150px;
+        width: 80%;
+        padding: 30px;
+        order: 1;
+        background-color: blue;   
+    }
+
+    #index hamburger-menu{
+        width: 20%;
+        height: 150px;
+        order: 2;
+        background-color: teal;
+    }
+
+    #index .logo-image{
+        display: none;
+    }
+    
+    
+    #index nav{
+        height: 100px;
+        width: 100%;
+        order: 3;
+        background-color: red;
+    }
+
+    #index aside{
+        padding: 10px;
+        width: 100%;
+        height : 200px;
+        order: 4;
+        float: left;
+        background-color: steelblue;
+    }
+    
+    #index promotion-video{
+        display: none;
+    }
+    
+    #index section.flexParent{
+        height: 1970px;
+        width: 100%;
+        padding: 10px;
+        display: flex; 
+        order: 5;   
+        flex-wrap: wrap; 
+        background-color: purple;  
+    }
+    
+    #index article-one{
+        flex-basis: 98%;
+        height: 640px;   
+        padding: 10px;
+        order: 3; 
+        background-color: royalblue; 
+    }
+    
+    #index article-two{
+        flex-basis: 98%; 
+        height: 640px;    
+        padding: 10px;
+        order: 2; 
+        background-color: royalblue; 
+    }
+    
+    #index article-three{
+        flex-basis: 98%; 
+        height: 640px;     
+        padding: 10px; 
+        order: 1;
+        background-color: royalblue; 
+    }   
+    
+    #index h1{
+        background-color: violet;
+    }
+    
+    #index h2{
+        background-color: orange;
+    }
+    
+    #index h3{
+        background-color: white;
+        width: 100%;
+    }
+    
+    #index p.story{
+        width: 100%;
+        margin-bottom: 20px;
+        line-height: 1.2em;
+        background-color: olive;
+    }
+    
+    #index p.copyright-photo{
+        background-color: hotpink;
+        float: left;
+    }
+    
+    #index img.photo-destination{
+        height: 280px;
+        width: 100%;
+        margin-bottom: 20px;
+        float: left;
+    }
+    
+    #index footer.footer-article{
+        height: 60px;
+        width: 380px;
+        float: left;
+        clear: both;
+        background-color: rgb(168, 42, 20);
+    }
+       
+    #index footer-body{
+        display: flex;    
+        flex-wrap: wrap; 
+        flex-basis: 70%;
+        float: left; 
+        order: 6;
+        background: lightcoral;
+    }
+    
+    #index p.cookie{
+        color: #fff;opacity:1;
+    }
+    
+    #index cookie-statement{
+        height: 50px;
+        width: 30%;
+        float: left; 
+        order: 7;
+        background-color: rgb(255, 170,	0);opacity:0.5;
+    }
+} /* END media querie mobile */
 
 
 
