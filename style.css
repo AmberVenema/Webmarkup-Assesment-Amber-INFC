@@ -875,12 +875,14 @@ float:left;
 } /* END media querie mobile */
 
 #tui-tickets header{
-    background-color: red;
+    background-color: blanchedalmond;
+    grid-column: 1 / 6;
     grid-area: headerTag;
 }
 
 #tui-tickets nav{
     background-color: violet;
+    grid-column: 1 / 6;
     grid-area: navTag;
 }
 
@@ -889,31 +891,43 @@ float:left;
 }
 
 #tui-tickets title{
+    grid-column: 1 / 6;
     grid-area: titleTag;
 }
 
 #tui-tickets table{
+    margin: 0px;
+    padding: 0px;
     background-color: turquoise;
+    grid-column: 1 / 4;
     grid-area: tableTag;
+}
+
+#tui-tickets th{
+    background-color: seagreen;
 }
 
 #tui-tickets aside{
     background-color: pink;
+    grid-column: 5 / span 6;
     grid-area: asideTag;
 }
 
 #tui-tickets .tui{
     background-color: fuchsia;
+    grid-column: 1 / 4;
     grid-area: copyTag;
 }
 
 #tui-tickets footer{
     background-color: khaki;
+    grid-column: 1 / 4;
     grid-area: footerTag;
 }
 
 #tui-tickets p.cookie{
     margin: 0px;
+    grid-column: 5 / span 6;
     color: #fff;opacity:1;
 }
 
@@ -934,15 +948,9 @@ float:left;
     grid-template-areas: 
     'headerTag  headerTag  headerTag  headerTag  headerTag  headerTag'
     'navTag     navTag     navTag     navTag     navTag     navTag'
-    'article2Tag  article2Tag  article2Tag  article1Tag  article1Tag  article3Tag'
-    'article2Tag  article2Tag  article2Tag  article1Tag  article1Tag  article3Tag'
-    'article5Tag  article5Tag  article5Tag  article1Tag  article1Tag  article3Tag'
-    'article5Tag  article5Tag  article5Tag  article1Tag  article1Tag  article4Tag'
-    'article5Tag  article5Tag  article5Tag  article1Tag  article1Tag  article4Tag'
-    'article5Tag  article5Tag  article5Tag  article1Tag  article1Tag  article4Tag'
-    'article5Tag  article5Tag  article5Tag  article6Tag  article6Tag  article6Tag'
-    'aside1Tag    aside1Tag    aside1Tag    aside2Tag    aside2Tag    aside3Tag'
-    'aside1Tag    aside1Tag    aside1Tag    aside2Tag    aside2Tag    aside3Tag'
-    'footerTag    footerTag    footerTag    footerTag    footerTag    cookieTag'
-    'footerTag    footerTag    footerTag    footerTag    footerTag    cookieTag';
+    'titleTag   titleTag   titleTag   titleTag   titleTag   titleTag'
+    'tableTag   tableTag   tableTag   tableTag   asideTag   asideTag'
+    'copyTag    copyTag    copyTag    copyTag    asideTag   asideTag'
+    'footerTag  footerTag  footerTag  footerTag  cookieTag  cookieTag'
+
 }
