@@ -70,8 +70,6 @@ float:left;
     background-color: royalblue; 
 }
 
-
-
 #index h1{
     background-color: violet;
 }
@@ -228,9 +226,7 @@ float:left;
         order: 1;
         background-color: royalblue; 
     }
-    
-    
-    
+     
     #index h1{
         background-color: violet;
     }
@@ -441,67 +437,82 @@ float:left;
 
 
 /* bestdestinations.html */
-header.destinations{
+@media screen and (min-width: 930px){
+#grid-container header{
     background-color: lightseagreen;
     grid-area: headerTag;
 }
 
-nav.destinations{
+#grid-container nav{
     background-color: magenta;
     grid-area: navTag;
 }
 
-article-destination{
-    height: 500px;
-    width: 80%;
+#grid-container article-destination{
+    padding-top: 300px;
+    width: 100%;
     float: left;
     background-color: purple;
     grid-area: article1Tag;
 }
 
-article-destination2{
-    height: 500px;
-    width: 80%;
+#grid-container article-destination2{
+    width: 100%;
     float: left;
     background-color: yellow;
     grid-area: article2Tag;
 }
 
-article-destination3{
-    height: 500px;
-    width: 80%;
+#grid-container article-destination3{
+    padding-top: 100px;
+    width: 100%;
     float: left;
     background-color: green;
     grid-area: article3Tag;
 }
 
-article-destination4{
-    height: 500px;
-    width: 80%;
+#grid-container article-destination4{
+    padding-top: 100px;
+    width: 100%;
     float: left;
     background-color: orange;
     grid-area: article4Tag;
 }
 
-article-destination5{
-    height: 500px;
-    width: 80%;
+#grid-container article-destination5{
+    padding-top: 200px;
+    width: 100%;
     float: left;
     background-color: pink;
     grid-area: article5Tag;
 }
 
-article-destination6{
-    height: 500px;
-    width: 80%;
+#grid-container article-destination6{
+    width: 100%;
     float: left;
     background-color: maroon;
     grid-area: article6Tag;
 }
 
-aside-product1{
-    height: 200px;
-    width: 20%;
+#grid-container p.story{
+    margin: 0px;
+    padding: 10px;
+    width: 80%;
+}
+
+#grid-container h3{
+    margin: 0px;
+    padding: 10px;
+}
+
+#grid-container img.photo-destination{
+    height: 500px;
+    width: 380px;
+    float: left;
+}
+
+#grid-container aside-product1{
+    width: 100%;
     flex-shrink: 0;   
     flex-grow: 0;
     float: left;
@@ -509,9 +520,9 @@ aside-product1{
     grid-area: aside1Tag;
 }
 
-aside-product2{
-    height: 200px;
-    width: 20%;
+#grid-container aside-product2{
+    justify-content: center;
+    width: 100%;
     flex-shrink: 0;   
     flex-grow: 0;
     float: left;
@@ -519,9 +530,8 @@ aside-product2{
     grid-area: aside2Tag;
 }
 
-aside-product3{
-    height: 200px;
-    width: 20%;
+#grid-container aside-product3{
+    width: 100%;
     flex-shrink: 0;   
     flex-grow: 0;
     float: left;
@@ -529,13 +539,19 @@ aside-product3{
     grid-area: aside3Tag;
 }
 
-footer.destinations{
+#grid-container footer{
     background-color: mediumaquamarine;
     grid-area: footerTag;
 }
 
-cookie-statement.destinations{
-    background-color: indigo;
+#grid-container p.cookie{
+    color: #fff;opacity:1;
+}
+
+#grid-container cookie-statement{
+    height: 50px;
+    float: left; 
+    background-color: rgb(255, 170,	0);opacity:0.5;
     grid-area: cookieTag;
 }
 
@@ -544,7 +560,375 @@ cookie-statement.destinations{
     padding: 10px;
 
     display: grid;
-    grid-gap: 10px;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 15px;
+
+    /* #column1  #column2  #column3  #column4  #column5  #column6 */
+    grid-template-areas: 
+    'headerTag  headerTag  headerTag  headerTag  headerTag  headerTag'
+    'navTag     navTag     navTag     navTag     navTag     navTag'
+    'article2Tag  article2Tag  article2Tag  article1Tag  article1Tag  article3Tag'
+    'article2Tag  article2Tag  article2Tag  article1Tag  article1Tag  article3Tag'
+    'article5Tag  article5Tag  article5Tag  article1Tag  article1Tag  article3Tag'
+    'article5Tag  article5Tag  article5Tag  article1Tag  article1Tag  article4Tag'
+    'article5Tag  article5Tag  article5Tag  article1Tag  article1Tag  article4Tag'
+    'article5Tag  article5Tag  article5Tag  article1Tag  article1Tag  article4Tag'
+    'article5Tag  article5Tag  article5Tag  article6Tag  article6Tag  article6Tag'
+    'aside1Tag    aside1Tag    aside1Tag    aside2Tag    aside2Tag    aside3Tag'
+    'aside1Tag    aside1Tag    aside1Tag    aside2Tag    aside2Tag    aside3Tag'
+    'footerTag    footerTag    footerTag    footerTag    footerTag    cookieTag'
+    'footerTag    footerTag    footerTag    footerTag    footerTag    cookieTag';
+}
+}
+
+
+/* media querie tablet */
+@media screen and (min-width: 720px) and (max-width:929px){
+
+    #grid-container header.destinations{
+        background-color: lightseagreen;
+        grid-area: headerTag;
+    }
+    
+    #grid-container nav.destinations{
+        display: none;
+    }
+    
+    #grid-container article-destination{
+        margin: 0px;
+        padding: 0px;
+        height: 350px;
+        width: 100%;
+        float: left;
+        background-color: purple;
+        grid-area: article1Tag;
+    }
+    
+    #grid-container article-destination2{
+        padding-top: 50px;
+        width: 100%;
+        float: left;
+        background-color: yellow;
+        grid-area: article2Tag;
+    }
+    
+    #grid-container article-destination3{
+        width: 100%;
+        float: left;
+        background-color: green;
+        grid-area: article3Tag;
+    }
+    
+    #grid-container article-destination4{
+        padding-top: 100px;
+        width: 100%;
+        float: left;
+        background-color: orange;
+        grid-area: article4Tag;
+    }
+    
+    #grid-container article-destination5{
+        padding-top: 90px;
+        height: 500px;
+        width: 100%;
+        float: left;
+        background-color: pink;
+        grid-area: article5Tag;
+    }
+    
+    #grid-container article-destination6{
+        height: 250px;
+        width: 100%;
+        float: left;
+        background-color: maroon;
+        grid-area: article6Tag;
+    }
+    
+    #grid-container p.story{
+        margin: 0px;
+        padding: 10px;
+        width: 80%;
+    }
+    
+    #grid-container h3{
+        margin: 0px;
+        padding: 10px;
+    }
+    
+    #grid-container img.photo-destination{
+        height: 500px;
+        width: 380px;
+        float: left;
+    }
+    
+    #grid-container aside-product1{
+        width: 100%;
+        flex-shrink: 0;   
+        flex-grow: 0;
+        float: left;
+        background-color: black;
+        grid-area: aside1Tag;
+    }
+    
+    #grid-container aside-product2{
+        justify-content: center;
+        width: 100%;
+        flex-shrink: 0;   
+        flex-grow: 0;
+        float: left;
+        background-color: grey;
+        grid-area: aside2Tag;
+    }
+    
+    #grid-container aside-product3{
+        display: none;
+    }
+    
+    #grid-container footer.destinations{
+        background-color: mediumaquamarine;
+        grid-area: footerTag;
+    }
+    
+    #grid-container p.cookie{
+        margin: 0px;
+        color: #fff;opacity:1;
+    }
+    
+    #grid-container cookie-statement{
+        float: left; 
+        background-color: rgb(255, 170,	0);opacity:0.5;
+        grid-area: cookieTag;
+    }
+    
+    #grid-container{
+        background-color: lawngreen;
+        padding: 10px;
+    
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-gap: 15px;
+    
+        /* #column1  #column2  #column3  #column4  #column5  #column6 */
+        grid-template-areas: 
+        'headerTag  headerTag  headerTag  headerTag  headerTag  headerTag'
+        'navTag     navTag     navTag     navTag     navTag     navTag'
+        'article1Tag  article1Tag  article1Tag  article2Tag  article2Tag  article2Tag'
+        'article1Tag  article1Tag  article1Tag  article2Tag  article2Tag  article2Tag'
+        'article3Tag  article3Tag  article3Tag  article2Tag  article2Tag  article2Tag'
+        'article3Tag  article3Tag  article3Tag  article5Tag  article5Tag  article5Tag'
+        'article3Tag  article3Tag  article3Tag  article5Tag  article5Tag  article5Tag'
+        'article3Tag  article3Tag  article3Tag  article5Tag  article5Tag  article5Tag'
+        'article6Tag  article6Tag  article6Tag  article6Tag  article6Tag  article6Tag'
+        'article6Tag  article6Tag  article6Tag  article6Tag  article6Tag  article6Tag'
+        'aside1Tag    aside1Tag    aside1Tag    aside2Tag    aside2Tag    aside2Tag'
+        'aside1Tag    aside1Tag    aside1Tag    aside2Tag    aside2Tag    aside2Tag'
+        'footerTag    footerTag    footerTag    cookieTag    cookieTag    cookieTag'
+        'footerTag    footerTag    footerTag    cookieTag    cookieTag    cookieTag';
+    } 
+} /* END media querie tablet */
+
+
+/* media querie mobile */
+@media screen and (max-width: 719px){
+
+    #grid-container header{
+        background-color: lightseagreen;
+        grid-area: headerTag;
+    }
+    
+    #grid-container nav{
+        display: none;
+    }
+
+    #grid-container hamburger-menu{
+        background-color: red;
+        grid-area: hamburgerTag;
+    }
+    
+    #grid-container article-destination{
+        margin: 0px;
+        padding: 0px;
+        height: 350px;
+        width: 100%;
+        float: left;
+        background-color: purple;
+        grid-area: article1Tag;
+    }
+    
+    #grid-container article-destination2{
+        width: 100%;
+        float: left;
+        background-color: yellow;
+        grid-area: article2Tag;
+    }
+    
+    #grid-container article-destination3{
+        width: 100%;
+        float: left;
+        background-color: green;
+        grid-area: article3Tag;
+    }
+    
+    #grid-container article-destination4{
+        display: none;
+    }
+    
+    #grid-container article-destination5{
+        height: 500px;
+        width: 100%;
+        float: left;
+        background-color: pink;
+        grid-area: article5Tag;
+    }
+    
+    #grid-container article-destination6{
+        display: none;
+    }
+    
+    #grid-container p.story{
+        margin: 0px;
+        padding: 10px;
+        width: 80%;
+    }
+    
+    #grid-container h3{
+        margin: 0px;
+        padding: 10px;
+    }
+    
+    #grid-container img.photo-destination{
+        height: 500px;
+        width: 380px;
+        float: left;
+    }
+    
+    #grid-container aside-product1{
+        width: 100%;
+        flex-shrink: 0;   
+        flex-grow: 0;
+        float: left;
+        background-color: black;
+        grid-area: aside1Tag;
+    }
+    
+    #grid-container aside-product2{
+        justify-content: center;
+        width: 100%;
+        flex-shrink: 0;   
+        flex-grow: 0;
+        float: left;
+        background-color: grey;
+        grid-area: aside2Tag;
+    }
+    
+    #grid-container aside-product3{
+        display: none;
+    }
+    
+    #grid-container footer{
+        background-color: mediumaquamarine;
+        grid-area: footerTag;
+    }
+    
+    #grid-container p.cookie{
+        margin: 0px;
+        color: #fff;opacity:1;
+    }
+    
+    #grid-container cookie-statement{
+        float: left; 
+        background-color: rgb(255, 170,	0);opacity:0.5;
+        grid-area: cookieTag;
+    }
+    
+    #grid-container{
+        background-color: lawngreen;
+        padding: 10px;
+    
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-gap: 15px;
+    
+        /* #column1  #column2  #column3  #column4  #column5  #column6 */
+        grid-template-areas: 
+        'headerTag  headerTag  headerTag  headerTag  hamburgerTag  hamburgerTag'
+        'headerTag  headerTag  headerTag  headerTag  hamburgerTag  hamburgerTag'
+        'headerTag  headerTag  headerTag  headerTag  hamburgerTag  hamburgerTag'
+        'article5Tag  article5Tag  article5Tag  article5Tag  article5Tag  article5Tag'
+        'article5Tag  article5Tag  article5Tag  article5Tag  article5Tag  article5Tag'
+        'article5Tag  article5Tag  article5Tag  article5Tag  article5Tag  article5Tag'
+        'article3Tag  article3Tag  article3Tag  article3Tag  article3Tag  article3Tag'
+        'article3Tag  article3Tag  article3Tag  article3Tag  article3Tag  article3Tag'
+        'article3Tag  article3Tag  article3Tag  article3Tag  article3Tag  article3Tag'
+        'article2Tag  article2Tag  article2Tag  article2Tag  article2Tag  article2Tag'
+        'article2Tag  article2Tag  article2Tag  article2Tag  article2Tag  article2Tag'
+        'article2Tag  article2Tag  article2Tag  article2Tag  article2Tag  article2Tag'
+        'article1Tag  article1Tag  article1Tag  article1Tag  article1Tag  article1Tag'
+        'article1Tag  article1Tag  article1Tag  article1Tag  article1Tag  article1Tag'
+        'article1Tag  article1Tag  article1Tag  article1Tag  article1Tag  article1Tag'
+        'aside1Tag    aside1Tag    aside1Tag    aside1Tag    aside1Tag    aside1Tag'
+        'aside2Tag    aside2Tag    aside2Tag    aside2Tag    aside2Tag    aside2Tag'
+        'aside3Tag    aside3Tag    aside3Tag    aside3Tag    aside3Tag    aside3Tag'
+        'footerTag    footerTag    footerTag    footerTag    cookieTag    cookieTag'
+        'footerTag    footerTag    footerTag    footerTag    cookieTag    cookieTag';
+    } 
+} /* END media querie mobile */
+
+#tui-tickets header{
+    background-color: red;
+    grid-area: headerTag;
+}
+
+#tui-tickets nav{
+    background-color: violet;
+    grid-area: navTag;
+}
+
+#tui-tickets hamburger-menu{
+    display: none;
+}
+
+#tui-tickets title{
+    grid-area: titleTag;
+}
+
+#tui-tickets table{
+    background-color: turquoise;
+    grid-area: tableTag;
+}
+
+#tui-tickets aside{
+    background-color: pink;
+    grid-area: asideTag;
+}
+
+#tui-tickets .tui{
+    background-color: fuchsia;
+    grid-area: copyTag;
+}
+
+#tui-tickets footer{
+    background-color: khaki;
+    grid-area: footerTag;
+}
+
+#tui-tickets p.cookie{
+    margin: 0px;
+    color: #fff;opacity:1;
+}
+
+#tui-tickets cookie-statement{
+    background-color: rgb(255, 170,	0);opacity:0.5;
+    grid-area: cookieTag;
+}
+
+#tui-tickets{
+    background-color: royalblue;
+    padding: 10px;
+
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 15px;
 
     /* #column1  #column2  #column3  #column4  #column5  #column6 */
     grid-template-areas: 
