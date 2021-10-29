@@ -110,7 +110,7 @@
     flex-shrink: 0;   
     flex-grow: 0;
     left: 1235px;
-    top: 274px;
+    top: 294px;
     padding: 13px;
     position: fixed;
     float: left;
@@ -129,15 +129,32 @@
     background: lightcoral;
 }
 
+#index footer{
+    display: flex;    
+    flex-wrap: wrap; 
+    flex-basis: 81.3%;
+    height: 50px;
+    float: left; 
+    order: 6;
+    background: lightcoral;
+}
+
+#index p.copy{
+    padding-top: 17px;
+    margin: 0px;
+}
+
 #index p.cookie{
+    padding-top: 8px;
+    margin: 0px;
     color: #fff;opacity:1;
 }
 
 #index cookie-statement{
     width: 20%;  
-    height: 51px; 
+    height: 50px; 
     left: 1235px;
-    top: 634px;
+    top: 654px;
     padding: 10px;
     position: fixed;
     background-color: rgb(255, 170,	0);opacity:0.5;
@@ -182,16 +199,20 @@
     }
     
     #index promotion-video{
-        padding: 20px;
-        height: 440px;
         width: 100%;
+        display: block;
+        padding-left: 200px;
+        margin-left: auto;
+        margin-right: auto;
         order: 4;
         background-color:palevioletred;
     }
     
     #index video{
-    float:left;
-    order: 4;
+        width: 520px;
+        height: 440px;
+        float:left;
+        order: 4;
     }
     
     #index section.flexParent{
@@ -266,7 +287,7 @@
         background-color: rgb(168, 42, 20);
     }
        
-    #index footer-body{
+    #index footer{
         display: flex;    
         flex-wrap: wrap; 
         flex-basis: 80%;
@@ -275,10 +296,17 @@
         background: lightcoral;
     }
     
-    #index p.cookie{
-        color: #fff;opacity:1;
+    #index p.copy{
+        padding-top: 17px;
+        margin: 0px;
     }
     
+    #index p.cookie{
+        padding-top: 17px;
+        margin: 0px;
+        color: #fff;opacity:1;
+    }
+
     #index cookie-statement{
         height: 50px;
         width: 20%;
@@ -301,7 +329,7 @@
 
     #index header.upper-header{
         height: 150px;
-        width: 80%;
+        width: 100%;
         padding: 30px;
         order: 1;
         background-color: blue;   
@@ -320,10 +348,7 @@
     
     
     #index nav{
-        height: 100px;
-        width: 100%;
-        order: 3;
-        background-color: red;
+       display: none;
     }
 
     #index aside{
@@ -413,7 +438,7 @@
         background-color: rgb(168, 42, 20);
     }
        
-    #index footer-body{
+    #index footer{
         display: flex;    
         flex-wrap: wrap; 
         flex-basis: 70%;
@@ -509,8 +534,8 @@
 }
 
 #grid-container img.photo-destination{
-    height: 500px;
-    width: 380px;
+    height: 100%;
+    width: 100%;
     float: left;
 }
 
@@ -547,8 +572,22 @@
     grid-area: footerTag;
 }
 
+#grid-container p.copy{
+    padding-top: 17px;
+    margin: 0px;
+}
+
 #grid-container p.cookie{
+    padding-top: 17px;
+    margin: 0px;
+    grid-column: 5 / span 6;
     color: #fff;opacity:1;
+}
+
+#grid-container cookie-statement{
+    height: 50px;
+    background-color: rgb(255, 170,	0);opacity:0.5;
+    grid-area: cookieTag;
 }
 
 #grid-container cookie-statement{
@@ -589,7 +628,8 @@
     }
     
     #grid-container nav{
-        display: none;
+        background-color: magenta;
+        grid-area: navTag;
     }
     
     #grid-container article-destination{
@@ -657,18 +697,13 @@
     
     #grid-container aside-product1{
         width: 100%;
-        flex-shrink: 0;   
-        flex-grow: 0;
         float: left;
         background-color: black;
         grid-area: aside1Tag;
     }
     
     #grid-container aside-product2{
-        justify-content: center;
         width: 100%;
-        flex-shrink: 0;   
-        flex-grow: 0;
         float: left;
         background-color: grey;
         grid-area: aside2Tag;
@@ -697,7 +732,6 @@
     #grid-container{
         background-color: lawngreen;
         padding: 10px;
-    
         display: grid;
         grid-template-columns: auto auto auto auto;
         grid-gap: 15px;
@@ -785,8 +819,8 @@
     }
     
     #grid-container img.photo-destination{
-        height: 500px;
-        width: 380px;
+        height: 100%;
+        width: 100%;
         float: left;
     }
     
@@ -810,7 +844,12 @@
     }
     
     #grid-container aside-product3{
-        display: none;
+        width: 100%;
+        flex-shrink: 0;   
+        flex-grow: 0;
+        float: left;
+        background-color: black;
+        grid-area: aside3Tag;
     }
     
     #grid-container footer{
@@ -850,7 +889,10 @@
         'footerTag    footerTag    footerTag    footerTag    cookieTag    cookieTag'
     } 
 } /* END media querie mobile */
+/* END bestdestinations.html */
 
+
+/* tickets.html */
 
 /* media querie pc */
 @media screen and (min-width: 930px){
@@ -870,21 +912,36 @@
     display: none;
 }
 
-#tui-tickets title{
+#tui-tickets title-article{
+    height: 45px;
+    background-color: greenyellow;
     grid-column: 1 / 6;
     grid-area: titleTag;
+}
+
+#tui-tickets h3{
+    margin: 0px;
+    padding: 10px;
 }
 
 #tui-tickets table{
     margin: 0px;
     padding: 0px;
-    background-color: turquoise;
+    background-color: seagreen;
     grid-column: 1 / 4;
     grid-area: tableTag;
 }
 
 #tui-tickets th{
     background-color: seagreen;
+}
+
+#tui-tickets td:nth-child(even){
+    background: purple;
+}
+
+#tui-tickets td:nth-child(odd){
+    background: palevioletred;
 }
 
 #tui-tickets aside{
@@ -896,6 +953,7 @@
 #tui-tickets img.photo-destination{
     width: 500%;
     height: 500%;
+    float: left;
 }
 
 #tui-tickets aside-product1{
@@ -924,7 +982,8 @@
     order: 3;
 }
 
-#tui-tickets .tui{
+#tui-tickets p.tui{
+    padding-top: 17px;
     margin: 0px;
     background-color: fuchsia;
     grid-column: 1 / 4;
@@ -932,19 +991,27 @@
 }
 
 #tui-tickets footer{
+    height: 50px;
     background-color: khaki;
     grid-column: 1 / 4;
     grid-area: footerTag;
 }
 
-#tui-tickets p.cookie{
+#tui-tickets p.copy{
+    padding-top: 17px;
     margin: 0px;
-    grid-column: 5 / span 6;
+}
+
+#tui-tickets p.cookie{
+    padding-top: 17px;
+    margin: 0px;
     color: #fff;opacity:1;
 }
 
 #tui-tickets cookie-statement{
+    height: 50px;
     background-color: rgb(255, 170,	0);opacity:0.5;
+    grid-column: 5 / span 6;
     grid-area: cookieTag;
 }
 
@@ -962,11 +1029,178 @@
     'navTag     navTag     navTag     navTag     navTag     navTag'
     'titleTag   titleTag   titleTag   titleTag   titleTag   titleTag'
     'tableTag   tableTag   tableTag   tableTag   asideTag   asideTag'
-    'copyTag    copyTag    copyTag    copyTag    asideTag   asideTag'
+    'copyTag    copyTag    copyTag    copyTag    asideTag    asideTag'
     'footerTag  footerTag  footerTag  footerTag  cookieTag  cookieTag'
 
 }
 }
+
+/* media querie tablet */
+@media screen and (min-width: 720px) and (max-width:929px){
+    #tui-tickets header{
+        background-color: blanchedalmond;
+        grid-column: 1 / 6;
+        grid-area: headerTag;
+    }
+    
+    #tui-tickets nav{
+        background-color: violet;
+        grid-column: 1 / 6;
+        grid-area: navTag;
+    }
+    
+    #tui-tickets hamburger-menu{
+        display: none;
+    }
+    
+    #tui-tickets title-article{
+        padding-left: 10px;
+        padding-bottom: 15px;
+        height: 45px;
+        background-color: greenyellow;
+        grid-column: 1 / 6;
+        grid-area: titleTag;
+    }
+    
+    #tui-tickets table{
+        margin: 0px;
+        padding: 0px;
+        background-color: seagreen;
+        grid-column: 1 / 4;
+        grid-area: tableTag;
+    }
+    
+    #tui-tickets th{
+        display: none;
+    }
+    
+    #tui-tickets tr:nth-child(even){
+        background: purple;
+    }
+    
+    #tui-tickets tr:nth-child(odd){
+        background: palevioletred;
+    }
+
+    #tui-tickets table, thead, tbody, th, td, tr { 
+        display: block; 
+    }
+
+    #tui-tickets thead tr { 
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    #tui-tickets tr { border: 1px solid gray; }
+
+    #tui-tickets td { 
+        border: none;
+        border-bottom: 1px solid gray; 
+        position: relative;
+        padding-left: 50%; 
+    }
+
+    #tui-tickets td:before { 
+        position: absolute;
+        top: 6px;
+        left: 6px;
+        width: 45%; 
+        padding-right: 10px; 
+        white-space: nowrap;
+    }
+
+    td:nth-of-type(1):before { content: "Kreta"; }
+    td:nth-of-type(2):before { content: "Ibiza"; }
+    td:nth-of-type(3):before { content: "Barcelona"; }
+    td:nth-of-type(4):before { content: "Punta Cana"; }
+    td:nth-of-type(5):before { content: "Mallorca"; }
+    
+    #tui-tickets aside{
+        background-color: black;
+        width: 100%;
+        grid-column: 1/ 6;
+        grid-area: asideTag;
+    }
+    
+    #tui-tickets img.photo-destination{
+        width: 100%;
+        height: 100%;
+        float: left;
+    }
+    
+    #tui-tickets aside-product1{
+        display: none;
+    }
+    
+    #tui-tickets aside-product2{
+        width: 50%;
+        float: left;
+        background-color: black;
+        grid-area: aside2Tag;
+    }
+    
+    #tui-tickets aside-product3{
+        width: 50%;
+        float: left;
+        background-color: grey;
+        grid-area: aside3Tag;
+    }
+    
+    #tui-tickets p.tui{
+        padding-top: 17px;
+        padding-bottom: 17px;
+        margin: 0px;
+        background-color: fuchsia;
+        grid-column: 1 / 4;
+        grid-area: copyTag;
+    }
+    
+    #tui-tickets footer{
+        height: 50px;
+        background-color: khaki;
+        grid-column: 1 / 4;
+        grid-area: footerTag;
+    }
+    
+    #tui-tickets p.copy{
+        padding-top: 17px;
+        margin: 0px;
+    }
+    
+    #tui-tickets p.cookie{
+        padding-top: 17px;
+        margin: 0px;
+        color: #fff;opacity:1;
+    }
+    
+    #tui-tickets cookie-statement{
+        height: 50px;
+        background-color: rgb(255, 170,	0);opacity:0.5;
+        grid-column: 5 / span 6;
+        grid-area: cookieTag;
+    }
+    
+    #tui-tickets{
+        background-color: royalblue;
+        padding: 10px;
+    
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-gap: 15px;
+    
+        /* #column1  #column2  #column3  #column4  #column5  #column6 */
+        grid-template-areas: 
+        'headerTag  headerTag  headerTag  headerTag  headerTag  headerTag'
+        'navTag     navTag     navTag     navTag     navTag     navTag'
+        'titleTag   titleTag   titleTag   titleTag   titleTag   titleTag'
+        'tableTag   tableTag   tableTag   tableTag   tableTag   tableTag'
+        'copyTag    copyTag    copyTag    copyTag    copyTag    copyTag'
+        'asideTag   asideTag   asideTag   asideTag   asideTag   asideTag'
+        'footerTag  footerTag  footerTag  cookieTag  cookieTag  cookieTag'
+    
+    }
+} 
 
 /* media querie mobile */
 @media screen and (max-width: 719px){
@@ -1002,6 +1236,14 @@
     #tui-tickets th{
         background-color: seagreen;
     }
+
+    #tui-tickets tr:nth-child(even){
+        background: #CCC;
+    }
+    
+    #tui-tickets tr:nth-child(odd){
+        background: #fff;
+    }    
     
     #tui-tickets aside{
         background-color: pink;
@@ -1048,7 +1290,10 @@
         'asideTag   asideTag   asideTag   asideTag   asideTag  asideTag'
         'footerTag  footerTag  footerTag  cookieTag  cookieTag  cookieTag'
     }
-}
+} /* END tickets.html */  
+
+
+ /* contact.html */  
 
 /* media querie pc */
 @media screen and (min-width: 930px){
@@ -1059,7 +1304,7 @@
     }
     
     #contact nav{
-        background-color: blue;
+        background-color: lightskyblue;
         grid-column: 1 / 6;
         grid-area: navTag;
     }
@@ -1088,6 +1333,7 @@
       padding: 12px;
       border: 1px solid #ccc;
       border-radius: 4px;
+      font-family: Arial, Helvetica, sans-serif;  
       box-sizing: border-box;
       margin-top: 6px;
       margin-bottom: 16px;
@@ -1106,48 +1352,72 @@
     #contact input[type=submit]:hover {
       background-color: #45a049;
     }
-    
-    #contact aside{
-        background-color: pink;
-        grid-column: 5 / span 6;
-        grid-area: asideTag;
+
+    #contact img.photo-destination{
+        margin: 0px;
+        padding: 0px;
+        width: 220%;
+        height: 220%;
+        float: left;
     }
 
+    #contact aside{
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+        background-color: black;
+        grid-column: 5 / span 6;
+        float: left;
+        grid-area: asideTag;
+    }
+    
     #contact aside-product1{
+        margin: 0px;
+        padding: 0px;
         width: 20%;
         float: left;
         order: 1;
-        background-color: black;
     }
     
     #contact aside-product2{
-        justify-content: center;
+        margin: 0px;
+        padding: 0px;
         width: 20%;
+        clear: both;
         float: left;
         order: 2;
-        background-color: grey;
     }
     
     #contact aside-product3{
+        margin: 0px;
+        padding: 0px;
         width: 20%;
+        clear: both;
         float: left;
         order: 3;
-        background-color: goldenrod;
     }
     
     #contact footer{
+        height: 50px;
         background-color: red;
         grid-column: 1 / 4;
         grid-area: footerTag;
     }
+
+    #contact p.copy{
+        padding-top: 17px;
+        margin: 0px;
+    }
     
     #contact p.cookie{
+        padding-top: 17px;
         margin: 0px;
         grid-column: 5 / span 6;
         color: #fff;opacity:1;
     }
     
     #contact cookie-statement{
+        height: 50px;
         background-color: rgb(255, 170,	0);opacity:0.5;
         grid-area: cookieTag;
     }
@@ -1155,7 +1425,6 @@
     #contact{
         background-color: royalblue;
         padding: 10px;
-    
         display: grid;
         grid-template-columns: auto auto auto auto;
         grid-gap: 15px;
@@ -1165,8 +1434,8 @@
         'headerTag  headerTag  headerTag  headerTag  headerTag  headerTag'
         'navTag     navTag     navTag     navTag     navTag     navTag'
         'titleTag   titleTag   titleTag   titleTag   titleTag   titleTag'
-        'formTag    formTag    formTag    formTag    asideTag   asideTag'
-        'footerTag  footerTag  footerTag  footerTag  cookieTag  cookieTag'
+        'formTag    formTag    formTag    formTag    formTag   asideTag'
+        'footerTag  footerTag  footerTag  footerTag  footerTag  cookieTag'
     
     }
     }
