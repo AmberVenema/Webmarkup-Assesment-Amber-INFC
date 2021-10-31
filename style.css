@@ -25,6 +25,10 @@
     background-color: red;
 }
 
+#index .drawer {
+    display: none;
+  }
+
 #index promotion-video{
     flex-basis: 100%; 
     padding: 10px;
@@ -189,6 +193,10 @@
         background-color: red;
     }
 
+    #index .drawer {
+        display: none;
+      }
+
     #index aside{
         padding: 10px;
         width: 100%;
@@ -328,19 +336,80 @@
     }
 
     #index header.upper-header{
-        height: 150px;
-        width: 100%;
+        height: 130px;
+        width: 55%;
         padding: 30px;
         order: 1;
         background-color: blue;   
     }
 
-    #index hamburger-menu{
-        width: 20%;
-        height: 150px;
+    #index .drawer {
+        position: relative;
+        box-sizing: border-box;
+        width: 32.5%;
         order: 2;
-        background-color: teal;
-    }
+        background-color: orange;
+      }
+      #index .drawer input {
+        width: 100%;
+        height: 60px;
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        left: 0;
+        margin: 0;
+        z-index: 3;
+        cursor: pointer;
+      }
+      #index .drawer__name {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        background: greenyellow;
+      }
+      #index strong{
+         margin-top: 15px;
+      }
+      #index .drawer__content {
+        box-sizing: border-box;
+        font-size: 15px;
+        width: 100%;
+        margin: 0;
+        height: 0;
+        opacity: 0;
+        pointer-events: none;
+        list-style: none;
+        transition: padding 0.2s;
+      }
+      #index .drawer__content a{
+          color: #fff;
+      }
+      #index .drawer__content a:active {
+          color: black;
+      }
+      #index .drawer input:checked ~ .drawer__content {
+        height: 80%;
+        opacity: 1;
+        pointer-events: initial;
+        padding: 10px 0;
+        background-color: green;
+      }
+      #index .drawer__arrow {
+        font-weight: 700;
+        font-size: 1.0rem;
+        transition: transform 0.2s;
+      }
+      #index .drawer input:checked ~ .drawer__name > .drawer__arrow {
+        transform: rotateZ(90deg);
+      }
+      #index .drawer__content li {
+        padding: 10px;
+        cursor: pointer;
+      }
+      #index .drawer__content li:hover {
+        color: rebeccapurple;
+        text-decoration: underline;
+      }
 
     #index .logo-image{
         display: none;
@@ -355,7 +424,7 @@
         padding: 10px;
         width: 100%;
         height : 200px;
-        order: 4;
+        order: 3;
         float: left;
         background-color: steelblue;
     }
@@ -369,7 +438,7 @@
         width: 100%;
         padding: 10px;
         display: flex; 
-        order: 5;   
+        order: 4;   
         flex-wrap: wrap; 
         background-color: purple;  
     }
@@ -439,11 +508,12 @@
     }
        
     #index footer{
+        height: 50px;
         display: flex;    
         flex-wrap: wrap; 
         flex-basis: 70%;
         float: left; 
-        order: 6;
+        order: 5;
         background: lightcoral;
     }
     
@@ -455,7 +525,7 @@
         height: 50px;
         width: 30%;
         float: left; 
-        order: 7;
+        order: 6;
         background-color: rgb(255, 170,	0);opacity:0.5;
     }
 } /* END media querie mobile */
@@ -475,6 +545,10 @@
     background-color: magenta;
     grid-area: navTag;
 }
+
+#grid-container .drawer {
+    display: none;
+  }
 
 #grid-container article-destination{
     padding-top: 300px;
@@ -631,6 +705,10 @@
         background-color: magenta;
         grid-area: navTag;
     }
+
+    #grid-container .drawer {
+        display: none;
+      }
     
     #grid-container article-destination{
         margin: 0px;
@@ -762,10 +840,74 @@
         display: none;
     }
 
-    #grid-container hamburger-menu{
-        background-color: red;
+    #grid-container .drawer {
+        position: relative;
+        box-sizing: border-box;
+        width: 100%;
+        background-color: orange;
         grid-area: hamburgerTag;
-    }
+      }
+      #grid-container .drawer input {
+        width: 100%;
+        height: 60px;
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        left: 0;
+        margin: 0;
+        z-index: 3;
+        cursor: pointer;
+      }
+      #grid-container .drawer__name {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        background: greenyellow;
+      }
+      #grid-container strong{
+         margin-top: 15px;
+      }
+      #grid-container .drawer__content {
+        box-sizing: border-box;
+        font-size: 15px;
+        width: 100%;
+        margin: 0;
+        height: 0;
+        opacity: 0;
+        pointer-events: none;
+        list-style: none;
+        transition: padding 0.2s;
+      }
+      #grid-container .drawer__content a{
+          color: #fff;
+      }
+      #grid-container .drawer__content a:active {
+          color: black;
+      }
+      #grid-container .drawer input:checked ~ .drawer__content {
+        height: 84%;
+        opacity: 1;
+        pointer-events: initial;
+        padding: 10px 0;
+        background-color: green;
+      }
+      #grid-container .drawer__arrow {
+        font-weight: 700;
+        font-size: 1.0rem;
+        transition: transform 0.2s;
+      }
+      #grid-container .drawer input:checked ~ .drawer__name > .drawer__arrow {
+        transform: rotateZ(90deg);
+      }
+      #grid-container .drawer__content li {
+        padding: 10px;
+        cursor: pointer;
+      }
+      #grid-container .drawer__content li:hover {
+        color: rebeccapurple;
+        text-decoration: underline;
+      }
+
     
     #grid-container article-destination{
         margin: 0px;
@@ -826,18 +968,13 @@
     
     #grid-container aside-product1{
         width: 100%;
-        flex-shrink: 0;   
-        flex-grow: 0;
         float: left;
         background-color: black;
         grid-area: aside1Tag;
     }
     
     #grid-container aside-product2{
-        justify-content: center;
         width: 100%;
-        flex-shrink: 0;   
-        flex-grow: 0;
         float: left;
         background-color: grey;
         grid-area: aside2Tag;
@@ -845,8 +982,6 @@
     
     #grid-container aside-product3{
         width: 100%;
-        flex-shrink: 0;   
-        flex-grow: 0;
         float: left;
         background-color: black;
         grid-area: aside3Tag;
@@ -1211,43 +1346,145 @@
     }
     
     #tui-tickets nav{
-        background-color: violet;
-        grid-column: 1 / 6;
-        grid-area: navTag;
+        display: none;
     }
     
-    #tui-tickets hamburger-menu{
+    #tui-tickets .drawer {
+        position: relative;
+        box-sizing: border-box;
+        width: 100%;
+        background-color: orange;
         grid-area: hamburgerTag;
-    }
+      }
+      #tui-tickets .drawer input {
+        width: 100%;
+        height: 60px;
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        left: 0;
+        margin: 0;
+        z-index: 3;
+        cursor: pointer;
+      }
+      #tui-tickets .drawer__name {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        background: greenyellow;
+      }
+      #tui-tickets strong{
+         margin-top: 15px;
+      }
+      #tui-tickets .drawer__content {
+        box-sizing: border-box;
+        font-size: 15px;
+        width: 100%;
+        margin: 0;
+        height: 0;
+        opacity: 0;
+        pointer-events: none;
+        list-style: none;
+        transition: padding 0.2s;
+      }
+      #tui-tickets .drawer__content a{
+          color: #fff;
+      }
+      #tui-tickets .drawer__content a:active {
+          color: black;
+      }
+      #tui-tickets .drawer input:checked ~ .drawer__content {
+        height: 84%;
+        opacity: 1;
+        pointer-events: initial;
+        padding: 10px 0;
+        background-color: green;
+      }
+      #tui-tickets .drawer__arrow {
+        font-weight: 700;
+        font-size: 1.0rem;
+        transition: transform 0.2s;
+      }
+      #tui-tickets .drawer input:checked ~ .drawer__name > .drawer__arrow {
+        transform: rotateZ(90deg);
+      }
+      #tui-tickets .drawer__content li {
+        padding: 10px;
+        cursor: pointer;
+      }
+      #tui-tickets .drawer__content li:hover {
+        color: rebeccapurple;
+        text-decoration: underline;
+      }
     
-    #tui-tickets title{
+    #tui-tickets title-article{
+        padding-left: 10px;
+        padding-bottom: 15px;
+        height: 45px;
+        background-color: greenyellow;
         grid-column: 1 / 6;
         grid-area: titleTag;
     }
     
     #tui-tickets table{
+        border-collapse: collapse; 
         margin: 0px;
         padding: 0px;
-        background-color: turquoise;
+        background-color: seagreen;
         grid-column: 1 / 4;
         grid-area: tableTag;
     }
     
     #tui-tickets th{
-        background-color: seagreen;
+        display: none;
     }
-
+    
     #tui-tickets tr:nth-child(even){
-        background: #CCC;
+        background: purple;
     }
     
     #tui-tickets tr:nth-child(odd){
-        background: #fff;
-    }    
+        background: palevioletred;
+    }
+
+    #tui-tickets table, thead, tbody, th, td, tr { 
+        display: block; 
+    }
+
+    #tui-tickets thead tr { 
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    #tui-tickets tr { border: 1px solid gray; }
+
+    #tui-tickets td { 
+        border: none;
+        border-bottom: 1px solid gray; 
+        position: relative;
+        padding-left: 50%; 
+    }
+
+    #tui-tickets td:before { 
+        position: absolute;
+        top: 6px;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px; 
+        white-space: nowrap;
+    }
+
+    td:nth-of-type(1):before { content: "Kreta"; }
+    td:nth-of-type(2):before { content: "Ibiza"; }
+    td:nth-of-type(3):before { content: "Barcelona"; }
+    td:nth-of-type(4):before { content: "Punta Cana"; }
+    td:nth-of-type(5):before { content: "Mallorca"; }   
     
     #tui-tickets aside{
-        background-color: pink;
-        grid-column: 5 / span 6;
+        background-color: black;
+        width: 100%;
+        grid-column: 1/ 6;
         grid-area: asideTag;
     }
     
@@ -1256,21 +1493,51 @@
         grid-column: 1 / 4;
         grid-area: copyTag;
     }
+
+    #tui-tickets img.photo-destination{
+        width: 100%;
+        height: 100%;
+        float: left;
+    }
+
+    #tui-tickets aside-product1{
+        width: 100%;
+        float: left;
+        background-color: black;
+        grid-area: aside1Tag;
+    }
+    
+    #tui-tickets aside-product2{
+        width: 100%;
+        float: left;
+        background-color: grey;
+        grid-area: aside2Tag;
+    }
+    
+    #tui-tickets aside-product3{
+        width: 100%;
+        float: left;
+        background-color: black;
+        grid-area: aside3Tag;
+    }
     
     #tui-tickets footer{
         background-color: khaki;
+        float: left;
         grid-column: 1 / 4;
         grid-area: footerTag;
     }
     
     #tui-tickets p.cookie{
         margin: 0px;
+        padding-top: 17px;
         grid-column: 5 / span 6;
         color: #fff;opacity:1;
     }
     
     #tui-tickets cookie-statement{
         background-color: rgb(255, 170,	0);opacity:0.5;
+        float: left;
         grid-area: cookieTag;
     }
     
@@ -1285,10 +1552,11 @@
         /* #column1  #column2  #column3  #column4  #column5  #column6 */
         grid-template-areas: 
         'headerTag  headerTag  headerTag  hamburgerTag  hamburgerTag  hamburgerTag'
-        'tableTag   tableTag   tableTag   tableTag   tableTag   tableTag'
-        'copyTag    copyTag    copyTag    copyTag    copyTag   copyTag'
-        'asideTag   asideTag   asideTag   asideTag   asideTag  asideTag'
-        'footerTag  footerTag  footerTag  cookieTag  cookieTag  cookieTag'
+        'titleTag   titleTag   titleTag   titleTag      titleTag      titleTag'
+        'tableTag   tableTag   tableTag   tableTag      tableTag      tableTag'
+        'copyTag    copyTag    copyTag    copyTag       copyTag       copyTag'
+        'asideTag   asideTag   asideTag   asideTag      asideTag      asideTag'
+        'footerTag  footerTag  footerTag  cookieTag     cookieTag     cookieTag'
     }
 } /* END tickets.html */  
 
@@ -1338,6 +1606,7 @@
       margin-top: 6px;
       margin-bottom: 16px;
       resize: vertical;
+      height: 315px;
     }
     
     #contact input[type=submit] {
@@ -1356,8 +1625,8 @@
     #contact img.photo-destination{
         margin: 0px;
         padding: 0px;
-        width: 220%;
-        height: 220%;
+        width: 500%;
+        height: 500%;
         float: left;
     }
 
@@ -1438,5 +1707,367 @@
         'footerTag  footerTag  footerTag  footerTag  footerTag  cookieTag'
     
     }
+}
+
+@media screen and (min-width: 720px) and (max-width:929px){
+    #contact header{
+        background-color: orange;
+        grid-column: 1 / 6;
+        grid-area: headerTag;
     }
+    
+    #contact nav{
+        background-color: lightskyblue;
+        grid-column: 1 / 6;
+        grid-area: navTag;
+    }
+    
+    #contact hamburger-menu{
+        display: none;
+    }
+
+    #contact contact-form{
+        grid-column: 1 / 4;
+        grid-area: formTag;    
+    }
+    
+    #contact title{
+        background-color: blueviolet;
+        grid-column: 1 / 6;
+    }
+
+    #contact h3{
+        margin: 0px;
+        padding: 10px;
+    }
+       
+    #contact input[type=text], select, textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-family: Arial, Helvetica, sans-serif;  
+      box-sizing: border-box;
+      margin-top: 6px;
+      margin-bottom: 16px;
+      resize: vertical;
+      height: 50px;
+    }
+    
+    #contact input[type=submit] {
+      background-color: #04AA6D;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    
+    #contact input[type=submit]:hover {
+      background-color: #45a049;
+    }
+
+    #contact img.photo-destination{
+        margin: 0px;
+        padding: 0px;
+        width: 500%;
+        height: 500%;
+        float: left;
+    }
+
+    #contact aside{
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+        background-color: black;
+        grid-column: 5 / span 6;
+        float: left;
+        grid-area: asideTag;
+    }
+    
+    #contact aside-product1{
+        margin: 0px;
+        padding: 0px;
+        width: 20%;
+        float: left;
+        order: 1;
+    }
+    
+    #contact aside-product2{
+        margin: 0px;
+        padding: 0px;
+        width: 20%;
+        clear: both;
+        float: left;
+        order: 2;
+    }
+    
+    #contact aside-product3{
+        margin: 0px;
+        padding: 0px;
+        width: 20%;
+        clear: both;
+        float: left;
+        order: 3;
+    }
+    
+    #contact footer{
+        height: 50px;
+        background-color: red;
+        grid-column: 1 / 4;
+        grid-area: footerTag;
+    }
+
+    #contact p.copy{
+        padding-top: 17px;
+        margin: 0px;
+    }
+    
+    #contact p.cookie{
+        padding-top: 17px;
+        margin: 0px;
+        grid-column: 5 / span 6;
+        color: #fff;opacity:1;
+    }
+    
+    #contact cookie-statement{
+        height: 50px;
+        background-color: rgb(255, 170,	0);opacity:0.5;
+        grid-area: cookieTag;
+    }
+    
+    #contact{
+        background-color: royalblue;
+        padding: 10px;
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-gap: 15px;
+    
+        /* #column1  #column2  #column3  #column4  #column5  #column6 */
+        grid-template-areas: 
+        'headerTag  headerTag  headerTag  headerTag  headerTag  headerTag'
+        'navTag     navTag     navTag     navTag     navTag     navTag'
+        'titleTag   titleTag   titleTag   titleTag   titleTag   titleTag'
+        'formTag    formTag    formTag    formTag    formTag    asideTag'
+        'footerTag  footerTag  footerTag  footerTag  cookieTag  cookieTag'
+    
+    }
+}
+
+@media screen and (max-width: 719px){
+#contact header{
+    background-color: orange;
+    grid-column: 1 / 6;
+    grid-area: headerTag;
+}
+
+#contact nav{
+    display: none;
+}
+
+#contact .drawer {
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: orange;
+    grid-area: hamburgerTag;
+  }
+
+  #contact .drawer input {
+    width: 100%;
+    height: 60px;
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    margin: 0;
+    z-index: 3;
+    cursor: pointer;
+  }
+
+  #contact .drawer__name {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background: greenyellow;
+  }
+
+  #contact strong{
+     margin-top: 15px;
+  }
+
+  #contact .drawer__content {
+    box-sizing: border-box;
+    font-size: 15px;
+    width: 100%;
+    margin: 0;
+    height: 0;
+    opacity: 0;
+    pointer-events: none;
+    list-style: none;
+    transition: padding 0.2s;
+  }
+
+  #contact .drawer__content a{
+      color: #fff;
+  }
+
+  #contact .drawer__content a:active {
+      color: black;
+  }
+
+  #contact .drawer input:checked ~ .drawer__content {
+    height: 84%;
+    opacity: 1;
+    pointer-events: initial;
+    padding: 10px 0;
+    background-color: green;
+  }
+
+  #contact .drawer__arrow {
+    font-weight: 700;
+    font-size: 1.0rem;
+    transition: transform 0.2s;
+  }
+
+  #contact .drawer input:checked ~ .drawer__name > .drawer__arrow {
+    transform: rotateZ(90deg);
+  }
+
+  #contact .drawer__content li {
+    padding: 10px;
+    cursor: pointer;
+  }
+
+  #contact .drawer__content li:hover {
+    color: rebeccapurple;
+    text-decoration: underline;
+  }
+
+    #contact contact-form{
+    grid-column: 1 / 4;
+    grid-area: formTag;    
+}
+
+    #contact title{
+    background-color: blueviolet;
+    grid-column: 1 / 6;
+}
+
+    #contact h3{
+    margin: 0px;
+    padding: 10px;
+}
+   
+#contact input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: Arial, Helvetica, sans-serif;  
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  height: 42px;
+}
+
+#contact input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#contact input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+#contact img.photo-destination{
+    margin: 0px;
+    padding: 0px;
+    width: 500%;
+    height: 500%;
+    float: left;
+}
+
+#contact aside{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    background-color: black;
+    grid-column: 5 / span 6;
+    float: left;
+    grid-area: asideTag;
+}
+
+#contact aside-product1{
+    margin: 0px;
+    padding: 0px;
+    width: 20%;
+    float: left;
+    order: 1;
+}
+
+#contact aside-product2{
+    margin: 0px;
+    padding: 0px;
+    width: 20%;
+    clear: both;
+    float: left;
+    order: 2;
+}
+
+#contact aside-product3{
+    margin: 0px;
+    padding: 0px;
+    width: 20%;
+    clear: both;
+    float: left;
+    order: 3;
+}
+
+#contact footer{
+    height: 50px;
+    background-color: red;
+    grid-column: 1 / 4;
+    grid-area: footerTag;
+}
+
+#contact p.copy{
+    padding-top: 17px;
+    margin: 0px;
+}
+
+#contact p.cookie{
+    padding-top: 17px;
+    margin: 0px;
+    grid-column: 5 / span 6;
+    color: #fff;opacity:1;
+}
+
+#contact cookie-statement{
+    height: 50px;
+    background-color: rgb(255, 170,	0);opacity:0.5;
+    grid-area: cookieTag;
+}
+
+#contact{
+    background-color: royalblue;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 15px;
+
+    /* #column1  #column2  #column3  #column4  #column5  #column6 */
+    grid-template-areas: 
+    'headerTag  headerTag  headerTag  headerTag  hamburgerTag  hamburgerTag'
+    'titleTag   titleTag   titleTag   titleTag   titleTag      titleTag'
+    'formTag    formTag    formTag    formTag    asideTag      asideTag'
+    'footerTag  footerTag  footerTag  footerTag  cookieTag     cookieTag'
+
+}
+}
 
