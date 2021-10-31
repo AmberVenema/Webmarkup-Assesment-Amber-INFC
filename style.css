@@ -1043,9 +1043,9 @@
     grid-area: navTag;
 }
 
-#tui-tickets hamburger-menu{
+#tui-tickets .drawer {
     display: none;
-}
+  }
 
 #tui-tickets title-article{
     height: 45px;
@@ -1184,9 +1184,9 @@
         grid-area: navTag;
     }
     
-    #tui-tickets hamburger-menu{
+    #tui-tickets .drawer {
         display: none;
-    }
+      }
     
     #tui-tickets title-article{
         padding-left: 10px;
@@ -1577,9 +1577,9 @@
         grid-area: navTag;
     }
     
-    #contact hamburger-menu{
+    #contact .drawer {
         display: none;
-    }
+      }
 
     #contact contact-form{
         grid-column: 1 / 4;
@@ -1722,9 +1722,9 @@
         grid-area: navTag;
     }
     
-    #contact hamburger-menu{
+    #contact .drawer {
         display: none;
-    }
+      }
 
     #contact contact-form{
         grid-column: 1 / 4;
