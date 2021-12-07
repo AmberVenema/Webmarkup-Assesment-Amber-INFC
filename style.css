@@ -78,10 +78,12 @@
 
 #index h1{
     background-color: violet;
+    text-indent: 30%;
 }
 
 #index h2{
     background-color: orange;
+    text-indent: 30%;
 }
 
 #index h3{
@@ -89,11 +91,15 @@
 }
 
 #index p.story{
+    text-transform: uppercase;
     background-color: olive;
+    word-spacing: 20px;
+    letter-spacing: 3px;
     line-height: 1.2em;
 }
 
-#index p.copyright-photo{
+#index figcaption{
+    font: italic smaller sans-serif;
     background-color: hotpink;
     float: right;
 }
@@ -104,8 +110,11 @@
     float: right;
 }
 
-#index footer.footer-article{
+#index figure{
+    height: 20px;
+    width: 320px;
     float: left;
+    padding: 15px;
     background-color: rgb(168, 42, 20);
 }
 
@@ -124,7 +133,11 @@
 #index ol{
     width: 80%;
     list-style-type: circle;
-  }
+}
+
+#index li{
+    color: #FFC72B;
+}
 
 #index footer-body{
     width: 80%;
@@ -193,6 +206,10 @@
         background-color: red;
     }
 
+    #index li{
+        color: #FFC72B;
+    }
+
     #index .drawer {
         display: none;
       }
@@ -224,7 +241,7 @@
     }
     
     #index section.flexParent{
-        height: 1290px;
+        height: 1600px;
         width: 100%;
         padding: 10px;
         display: flex; 
@@ -235,7 +252,7 @@
     
     #index article-one{
         flex-basis: 98%;
-        height: 430px;   
+        height: 500px;   
         padding: 10px;
         order: 3; 
         background-color: royalblue; 
@@ -243,7 +260,7 @@
     
     #index article-two{
         flex-basis: 98%; 
-        height: 430px;    
+        height: 500px;    
         padding: 10px;
         order: 2; 
         background-color: royalblue; 
@@ -251,7 +268,7 @@
     
     #index article-three{
         flex-basis: 98%; 
-        height: 430px;     
+        height: 500px;     
         padding: 10px; 
         order: 1;
         background-color: royalblue; 
@@ -259,10 +276,12 @@
      
     #index h1{
         background-color: violet;
+        text-indent: 30%;
     }
     
     #index h2{
         background-color: orange;
+        text-indent: 30%;
     }
     
     #index h3{
@@ -271,14 +290,17 @@
     }
     
     #index p.story{
+        text-transform: uppercase;
         width: 800px;
         background-color: olive;
+        letter-spacing: 3px;
         line-height: 1.2em;
     }
     
-    #index p.copyright-photo{
+    #index figcaption{
+        font: italic smaller sans-serif;
         background-color: hotpink;
-        float: left;
+        float: right;
     }
     
     #index img.photo-destination{
@@ -287,7 +309,7 @@
         float: left;
     }
     
-    #index footer.footer-article{
+    #index figure{
         height: 60px;
         width: 380px;
         float: left;
@@ -336,7 +358,7 @@
     }
 
     #index header.upper-header{
-        height: 130px;
+        height: 200px;
         width: 55%;
         padding: 30px;
         order: 1;
@@ -349,8 +371,13 @@
         width: 32.5%;
         order: 2;
         background-color: orange;
-      }
-      #index .drawer input {
+    } 
+
+    #index li{
+        color: #FFC72B;
+    }  
+
+    #index .drawer input {
         width: 100%;
         height: 60px;
         position: absolute;
@@ -361,16 +388,19 @@
         z-index: 3;
         cursor: pointer;
       }
-      #index .drawer__name {
+
+    #index .drawer__name {
         display: flex;
         justify-content: space-between;
         padding: 10px;
         background: greenyellow;
       }
-      #index strong{
+
+    #index strong{
          margin-top: 15px;
       }
-      #index .drawer__content {
+
+    #index .drawer__content {
         box-sizing: border-box;
         font-size: 15px;
         width: 100%;
@@ -381,40 +411,46 @@
         list-style: none;
         transition: padding 0.2s;
       }
-      #index .drawer__content a{
+
+    #index .drawer__content a{
           color: #fff;
       }
-      #index .drawer__content a:active {
+
+    #index .drawer__content a:active {
           color: black;
       }
-      #index .drawer input:checked ~ .drawer__content {
+
+    #index .drawer input:checked ~ .drawer__content {
         height: 80%;
         opacity: 1;
         pointer-events: initial;
         padding: 10px 0;
         background-color: green;
       }
-      #index .drawer__arrow {
+
+    #index .drawer__arrow {
         font-weight: 700;
         font-size: 1.0rem;
         transition: transform 0.2s;
       }
-      #index .drawer input:checked ~ .drawer__name > .drawer__arrow {
+
+    #index .drawer input:checked ~ .drawer__name > .drawer__arrow {
         transform: rotateZ(90deg);
       }
-      #index .drawer__content li {
+
+    #index .drawer__content li {
         padding: 10px;
         cursor: pointer;
       }
-      #index .drawer__content li:hover {
+
+    #index .drawer__content li:hover {
         color: rebeccapurple;
         text-decoration: underline;
       }
 
     #index .logo-image{
         display: none;
-    }
-    
+    }   
     
     #index nav{
        display: none;
@@ -434,7 +470,7 @@
     }
     
     #index section.flexParent{
-        height: 1970px;
+        height: 2700px;
         width: 100%;
         padding: 10px;
         display: flex; 
@@ -445,7 +481,7 @@
     
     #index article-one{
         flex-basis: 98%;
-        height: 640px;   
+        height: 800px;   
         padding: 10px;
         order: 3; 
         background-color: royalblue; 
@@ -453,7 +489,7 @@
     
     #index article-two{
         flex-basis: 98%; 
-        height: 640px;    
+        height: 890px;    
         padding: 10px;
         order: 2; 
         background-color: royalblue; 
@@ -461,7 +497,7 @@
     
     #index article-three{
         flex-basis: 98%; 
-        height: 640px;     
+        height: 850px;     
         padding: 10px; 
         order: 1;
         background-color: royalblue; 
@@ -469,10 +505,12 @@
     
     #index h1{
         background-color: violet;
+        text-indent: 30%;
     }
     
     #index h2{
         background-color: orange;
+        text-indent: 30%;
     }
     
     #index h3{
@@ -481,15 +519,18 @@
     }
     
     #index p.story{
+        text-transform: uppercase;
         width: 100%;
         margin-bottom: 20px;
         line-height: 1.2em;
+        letter-spacing: 3px;
         background-color: olive;
     }
     
-    #index p.copyright-photo{
+    #index figcaption{
+        font: italic smaller sans-serif;
         background-color: hotpink;
-        float: left;
+        float: right;
     }
     
     #index img.photo-destination{
@@ -499,7 +540,7 @@
         float: left;
     }
     
-    #index footer.footer-article{
+    #index figure{
         height: 60px;
         width: 380px;
         float: left;
@@ -537,31 +578,35 @@
 /* media querie pc */
 @media screen and (min-width: 930px){
 #grid-container header{
-    background-color: lightseagreen;
+    background-color: #26dfa0;
     grid-area: headerTag;
 }
 
 #grid-container nav{
-    background-color: magenta;
+    background-color: #ff0086;
     grid-area: navTag;
 }
 
 #grid-container .drawer {
     display: none;
-  }
+}
+
+#grid-container li{
+    color: #FFC72B;
+}
 
 #grid-container article-destination{
     padding-top: 300px;
     width: 100%;
     float: left;
-    background-color: purple;
+    background-color: #700086;
     grid-area: article1Tag;
 }
 
 #grid-container article-destination2{
     width: 100%;
     float: left;
-    background-color: yellow;
+    background-color: #ffff33;
     grid-area: article2Tag;
 }
 
@@ -569,7 +614,7 @@
     padding-top: 100px;
     width: 100%;
     float: left;
-    background-color: green;
+    background-color: #19680e;
     grid-area: article3Tag;
 }
 
@@ -577,7 +622,7 @@
     padding-top: 100px;
     width: 100%;
     float: left;
-    background-color: orange;
+    background-color: #ffc16b;
     grid-area: article4Tag;
 }
 
@@ -597,9 +642,20 @@
 }
 
 #grid-container p.story{
+    font-family: 'Notable', sans-serif;
+    text-indent: -2em;
+    font-size: 13px;
     margin: 0px;
     padding: 10px;
     width: 80%;
+}
+
+#grid-container h1{
+    text-indent: 30%;
+}
+
+#grid-container h2{
+    text-indent: 30%;
 }
 
 #grid-container h3{
@@ -618,7 +674,7 @@
     flex-shrink: 0;   
     flex-grow: 0;
     float: left;
-    background-color: black;
+    background-color: #000000;
     grid-area: aside1Tag;
 }
 
@@ -628,7 +684,7 @@
     flex-shrink: 0;   
     flex-grow: 0;
     float: left;
-    background-color: grey;
+    background-color: #8d8d8d;
     grid-area: aside2Tag;
 }
 
@@ -674,7 +730,6 @@
 #grid-container{
     background-color: lawngreen;
     padding: 10px;
-
     display: grid;
     grid-template-columns: auto auto auto auto;
     grid-gap: 15px;
@@ -697,18 +752,23 @@
 @media screen and (min-width: 720px) and (max-width:929px){
 
     #grid-container header{
-        background-color: lightseagreen;
+        background-color: #26dfa0;
         grid-area: headerTag;
     }
     
     #grid-container nav{
-        background-color: magenta;
+        background-color: #ff0086;
         grid-area: navTag;
     }
 
     #grid-container .drawer {
         display: none;
-      }
+    }
+
+    
+    #grid-container li{
+        color: #FFC72B;
+    }
     
     #grid-container article-destination{
         margin: 0px;
@@ -716,7 +776,7 @@
         height: 350px;
         width: 100%;
         float: left;
-        background-color: purple;
+        background-color: #700086;
         grid-area: article1Tag;
     }
     
@@ -724,14 +784,14 @@
         padding-top: 50px;
         width: 100%;
         float: left;
-        background-color: yellow;
+        background-color: #ffff33;
         grid-area: article2Tag;
     }
     
     #grid-container article-destination3{
         width: 100%;
         float: left;
-        background-color: green;
+        background-color: #19680e;
         grid-area: article3Tag;
     }
     
@@ -757,9 +817,19 @@
     }
     
     #grid-container p.story{
+        font-family: 'Notable', sans-serif;
+        color: #FFC72B;
         margin: 0px;
         padding: 10px;
         width: 80%;
+    }
+
+    #grid-container h1{
+        text-indent: 30%;
+    }
+    
+    #grid-container h2{
+        text-indent: 30%;
     }
     
     #grid-container h3{
@@ -776,14 +846,14 @@
     #grid-container aside-product1{
         width: 100%;
         float: left;
-        background-color: black;
+        background-color: #000000;
         grid-area: aside1Tag;
     }
     
     #grid-container aside-product2{
         width: 100%;
         float: left;
-        background-color: grey;
+        background-color: #8d8d8d;
         grid-area: aside2Tag;
     }
     
@@ -832,21 +902,26 @@
 @media screen and (max-width: 719px){
 
     #grid-container header{
-        background-color: lightseagreen;
+        background-color: #26dfa0;
         grid-area: headerTag;
     }
     
     #grid-container nav{
         display: none;
     }
+ 
+    #grid-container li{
+        color: #FFC72B;
+    }
 
     #grid-container .drawer {
         position: relative;
         box-sizing: border-box;
         width: 100%;
-        background-color: orange;
+        background-color: #ffc16b;
         grid-area: hamburgerTag;
       }
+
       #grid-container .drawer input {
         width: 100%;
         height: 60px;
@@ -858,15 +933,18 @@
         z-index: 3;
         cursor: pointer;
       }
+
       #grid-container .drawer__name {
         display: flex;
         justify-content: space-between;
         padding: 10px;
         background: greenyellow;
       }
+
       #grid-container strong{
          margin-top: 15px;
       }
+
       #grid-container .drawer__content {
         box-sizing: border-box;
         font-size: 15px;
@@ -878,27 +956,33 @@
         list-style: none;
         transition: padding 0.2s;
       }
+
       #grid-container .drawer__content a{
           color: #fff;
       }
+
       #grid-container .drawer__content a:active {
-          color: black;
+          color: #000000;
       }
+
       #grid-container .drawer input:checked ~ .drawer__content {
         height: 84%;
         opacity: 1;
         pointer-events: initial;
         padding: 10px 0;
-        background-color: green;
+        background-color: #19680e;
       }
+
       #grid-container .drawer__arrow {
         font-weight: 700;
         font-size: 1.0rem;
         transition: transform 0.2s;
       }
+
       #grid-container .drawer input:checked ~ .drawer__name > .drawer__arrow {
         transform: rotateZ(90deg);
       }
+
       #grid-container .drawer__content li {
         padding: 10px;
         cursor: pointer;
@@ -915,7 +999,7 @@
         height: 350px;
         width: 100%;
         float: left;
-        background-color: purple;
+        background-color: #700086;
         grid-area: article1Tag;
     }
     
@@ -950,9 +1034,20 @@
     }
     
     #grid-container p.story{
+        font-family: 'Notable', sans-serif;
+        font-size: 15px;
+        color: #FFC72B;
         margin: 0px;
         padding: 10px;
         width: 80%;
+    }
+
+    #grid-container h1{
+        text-indent: 30%;
+    }
+    
+    #grid-container h2{
+        text-indent: 30%;
     }
     
     #grid-container h3{
@@ -969,21 +1064,21 @@
     #grid-container aside-product1{
         width: 100%;
         float: left;
-        background-color: black;
+        background-color: #000000;
         grid-area: aside1Tag;
     }
     
     #grid-container aside-product2{
         width: 100%;
         float: left;
-        background-color: grey;
+        background-color: #8d8d8d;
         grid-area: aside2Tag;
     }
     
     #grid-container aside-product3{
         width: 100%;
         float: left;
-        background-color: black;
+        background-color: #000000;
         grid-area: aside3Tag;
     }
     
@@ -1006,7 +1101,6 @@
     #grid-container{
         background-color: lawngreen;
         padding: 10px;
-    
         display: grid;
         grid-template-columns: auto auto auto auto;
         grid-gap: 15px;
@@ -1054,33 +1148,40 @@
     grid-area: titleTag;
 }
 
+#tui-tickets h1{
+    text-indent: 30%;
+}
+
+#tui-tickets h2{
+    text-indent: 30%;
+}
+
 #tui-tickets h3{
     margin: 0px;
     padding: 10px;
 }
 
-#tui-tickets table{
+#tui-tickets table > :first-child{
     margin: 0px;
     padding: 0px;
-    background-color: seagreen;
     grid-column: 1 / 4;
     grid-area: tableTag;
 }
 
 #tui-tickets th{
-    background-color: seagreen;
+    background-color: #FF0 ;
 }
 
-#tui-tickets td:nth-child(even){
-    background: purple;
+#tui-tickets td:nth-child(2n){
+    background: #CFF;
 }
 
-#tui-tickets td:nth-child(odd){
-    background: palevioletred;
+#tui-tickets td:nth-child(2n+1){
+    background: #FFF;
 }
 
 #tui-tickets aside{
-    background-color: black;
+    background-color: #000000;
     grid-column: 5 / span 6;
     grid-area: asideTag;
 }
@@ -1153,7 +1254,7 @@
 #tui-tickets{
     background-color: royalblue;
     padding: 10px;
-
+    font-family:Arial, Helvetica, sans-serif;
     display: grid;
     grid-template-columns: auto auto auto auto;
     grid-gap: 15px;
@@ -1172,6 +1273,10 @@
 
 /* media querie tablet */
 @media screen and (min-width: 720px) and (max-width:929px){
+    #tui-tickets body{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
     #tui-tickets header{
         background-color: blanchedalmond;
         grid-column: 1 / 6;
@@ -1182,6 +1287,14 @@
         background-color: violet;
         grid-column: 1 / 6;
         grid-area: navTag;
+    }
+
+    #tui-tickets h1{
+        text-indent: 30%;
+    }
+    
+    #tui-tickets h2{
+        text-indent: 30%;
     }
     
     #tui-tickets .drawer {
@@ -1252,7 +1365,7 @@
     td:nth-of-type(5):before { content: "Mallorca"; }
     
     #tui-tickets aside{
-        background-color: black;
+        background-color: #000000;
         width: 100%;
         grid-column: 1/ 6;
         grid-area: asideTag;
@@ -1271,7 +1384,7 @@
     #tui-tickets aside-product2{
         width: 50%;
         float: left;
-        background-color: black;
+        background-color: #000000;
         grid-area: aside2Tag;
     }
     
@@ -1319,7 +1432,7 @@
     #tui-tickets{
         background-color: royalblue;
         padding: 10px;
-    
+        font-family:Arial, Helvetica, sans-serif;
         display: grid;
         grid-template-columns: auto auto auto auto;
         grid-gap: 15px;
@@ -1391,7 +1504,7 @@
           color: #fff;
       }
       #tui-tickets .drawer__content a:active {
-          color: black;
+          color: #000000;
       }
       #tui-tickets .drawer input:checked ~ .drawer__content {
         height: 84%;
@@ -1482,7 +1595,7 @@
     td:nth-of-type(5):before { content: "Mallorca"; }   
     
     #tui-tickets aside{
-        background-color: black;
+        background-color: #000000;
         width: 100%;
         grid-column: 1/ 6;
         grid-area: asideTag;
@@ -1503,7 +1616,7 @@
     #tui-tickets aside-product1{
         width: 100%;
         float: left;
-        background-color: black;
+        background-color: #000000;
         grid-area: aside1Tag;
     }
     
@@ -1544,7 +1657,7 @@
     #tui-tickets{
         background-color: royalblue;
         padding: 10px;
-    
+        font-family:Arial, Helvetica, sans-serif;
         display: grid;
         grid-template-columns: auto auto auto auto;
         grid-gap: 15px;
@@ -1591,6 +1704,14 @@
         grid-column: 1 / 6;
     }
 
+    #contact h1{
+        text-indent: 30%;
+    }
+
+    #contact h2{
+        text-indent: 30%;
+    }
+
     #contact h3{
         margin: 0px;
         padding: 10px;
@@ -1634,7 +1755,7 @@
         margin: 0px;
         padding: 0px;
         width: 100%;
-        background-color: black;
+        background-color: #000000;
         grid-column: 5 / span 6;
         float: left;
         grid-area: asideTag;
@@ -1735,6 +1856,14 @@
         background-color: blueviolet;
         grid-column: 1 / 6;
     }
+   
+    #contact h1{
+        text-indent: 30%;
+    }
+
+    #contact h2{
+        text-indent: 30%;
+    }
 
     #contact h3{
         margin: 0px;
@@ -1779,7 +1908,7 @@
         margin: 0px;
         padding: 0px;
         width: 100%;
-        background-color: black;
+        background-color: #000000;
         grid-column: 5 / span 6;
         float: left;
         grid-area: asideTag;
@@ -1913,7 +2042,7 @@
   }
 
   #contact .drawer__content a:active {
-      color: black;
+      color: #000000;
   }
 
   #contact .drawer input:checked ~ .drawer__content {
@@ -1954,7 +2083,16 @@
     grid-column: 1 / 6;
 }
 
-    #contact h3{
+
+#contact h1{
+    text-indent: 30%;
+}
+
+#contact h2{
+    text-indent: 30%;
+}
+
+#contact h3{
     margin: 0px;
     padding: 10px;
 }
@@ -1997,7 +2135,7 @@
     margin: 0px;
     padding: 0px;
     width: 100%;
-    background-color: black;
+    background-color: #000000;
     grid-column: 5 / span 6;
     float: left;
     grid-area: asideTag;
