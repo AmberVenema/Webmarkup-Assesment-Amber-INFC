@@ -25,6 +25,18 @@
     background-color: red;
 }
 
+#index a{
+    color:#ffc16b;
+}
+
+#index a:hover{
+    color:greenyellow;
+}
+
+#index a:active{
+    color:lightseagreen;
+}
+
 #index .drawer {
     display: none;
   }
@@ -206,6 +218,14 @@
         background-color: red;
     }
 
+    #index a{
+        color:#ffc16b;
+    }
+
+    #index a:active{
+        color:lightseagreen;
+    }
+
     #index li{
         color: #FFC72B;
     }
@@ -376,6 +396,14 @@
     #index li{
         color: #FFC72B;
     }  
+
+    #index a{
+        color:#ffc16b;
+    }
+
+    #index a:active{
+        color:lightseagreen;
+    }
 
     #index .drawer input {
         width: 100%;
@@ -591,6 +619,18 @@
     display: none;
 }
 
+#grid-container a{
+    color:#ffc16b;
+}
+
+#grid-container a:hover{
+    color:greenyellow;
+}
+
+#grid-container a:active{
+    color:lightseagreen;
+}
+
 #grid-container li{
     color: #FFC72B;
 }
@@ -639,7 +679,7 @@
     float: left;
     background-color: maroon;
     grid-area: article6Tag;
-}
+}   
 
 #grid-container p.story{
     font-family: 'Notable', sans-serif;
@@ -658,7 +698,8 @@
     text-indent: 30%;
 }
 
-#grid-container h3{
+#grid-container h3::first-letter{
+    font-size: 80px;
     margin: 0px;
     padding: 10px;
 }
@@ -768,6 +809,14 @@
     
     #grid-container li{
         color: #FFC72B;
+    }
+
+    #grid-container a{
+        color:#ffc16b;
+    }
+    
+    #grid-container a:active{
+        color:lightseagreen;
     }
     
     #grid-container article-destination{
@@ -912,6 +961,14 @@
  
     #grid-container li{
         color: #FFC72B;
+    }
+
+    #grid-container a{
+        color:#ffc16b;
+    }
+    
+    #grid-container a:active{
+        color:lightseagreen;
     }
 
     #grid-container .drawer {
@@ -1141,6 +1198,18 @@
     display: none;
   }
 
+#tui-tickets a{
+    color:#ffc16b;
+}
+
+#tui-tickets a:hover{
+    color:greenyellow;
+}
+
+#tui-tickets a:active{
+    color:lightseagreen;
+}  
+
 #tui-tickets title-article{
     height: 45px;
     background-color: greenyellow;
@@ -1288,6 +1357,14 @@
         grid-column: 1 / 6;
         grid-area: navTag;
     }
+
+    #tui-tickets a{
+        color:#ffc16b;
+    }
+    
+    #tui-tickets a:active{
+        color:lightseagreen;
+    }  
 
     #tui-tickets h1{
         text-indent: 30%;
@@ -1461,6 +1538,14 @@
     #tui-tickets nav{
         display: none;
     }
+
+    #tui-tickets a{
+        color:#ffc16b;
+    }
+    
+    #tui-tickets a:active{
+        color:lightseagreen;
+    }  
     
     #tui-tickets .drawer {
         position: relative;
@@ -1689,6 +1774,18 @@
         grid-column: 1 / 6;
         grid-area: navTag;
     }
+
+    #contact a{
+        color:#ffc16b;
+    }
+    
+    #contact a:hover{
+        color:greenyellow;
+    }
+    
+    #contact a:active{
+        color:lightseagreen;
+    }  
     
     #contact .drawer {
         display: none;
@@ -1842,6 +1939,14 @@
         grid-column: 1 / 6;
         grid-area: navTag;
     }
+
+    #contact a{
+        color:#ffc16b;
+    }
+    
+    #contact a:active{
+        color:lightseagreen;
+    } 
     
     #contact .drawer {
         display: none;
@@ -1993,6 +2098,14 @@
 #contact nav{
     display: none;
 }
+
+#contact a{
+    color:#ffc16b;
+}
+
+#contact a:active{
+    color:lightseagreen;
+} 
 
 #contact .drawer {
     position: relative;
