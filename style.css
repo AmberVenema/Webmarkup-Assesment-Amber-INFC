@@ -177,6 +177,7 @@
         padding-top: 8px;
         margin: 0px;
         color: #fff;opacity:1;
+        z-index: 9999;
     }
 
     #index cookie-statement{
@@ -355,6 +356,7 @@
         padding-top: 17px;
         margin: 0px;
         color: #fff;opacity:1;
+        z-index: 9999;
     }
 
     #index cookie-statement{
@@ -588,6 +590,7 @@
     
     #index p.cookie{
         color: #fff;opacity:1;
+        z-index: 9999;
     }
     
     #index cookie-statement{
@@ -753,6 +756,7 @@
         margin: 0px;
         grid-column: 5 / span 6;
         color: #fff;opacity:1;
+        z-index: 9999;
     }
 
     #grid-container cookie-statement{
@@ -918,6 +922,7 @@
     #grid-container p.cookie{
         margin: 0px;
         color: #fff;opacity:1;
+        z-index: 9999;
     }
     
     #grid-container cookie-statement{
@@ -1147,6 +1152,7 @@
     #grid-container p.cookie{
         margin: 0px;
         color: #fff;opacity:1;
+        z-index: 9999;
     }
     
     #grid-container cookie-statement{
@@ -1249,6 +1255,12 @@
         background: #FFF;
     }
 
+    #tui-tickets td{
+        border-color:#700086;     
+        border-style: dotted;
+        border-width: 3px;
+    }
+
     #tui-tickets aside{
         background-color: #000000;
         grid-column: 5 / span 6;
@@ -1311,6 +1323,7 @@
         padding-top: 17px;
         margin: 0px;
         color: #fff;opacity:1;
+        z-index: 9999;
     }
 
     #tui-tickets cookie-statement{
@@ -1412,12 +1425,13 @@
     #tui-tickets tr { border: 1px solid gray; }
 
     #tui-tickets td { 
-        border: none;
+        border-color:#700086;     
+        border-style: dotted;
+        border-width: 3px;
         width: 200px;
         border-bottom: 1px solid gray; 
     }
     
-
     #tui-tickets td:before { 
         position: absolute;
         top: 6px;
@@ -1483,6 +1497,7 @@
         padding-top: 17px;
         margin: 0px;
         color: #fff;opacity:1;
+        z-index: 9999;
     }
     
     #tui-tickets cookie-statement{
@@ -1655,7 +1670,9 @@
     #tui-tickets tr { border: 1px solid gray; }
 
     #tui-tickets td { 
-        border: none;
+        border-color:#700086;     
+        border-style: dotted;
+        border-width: 3px;
         border-bottom: 1px solid gray; 
         position: relative;
         padding-left: 50%; 
@@ -1728,6 +1745,7 @@
         padding-top: 17px;
         grid-column: 5 / span 6;
         color: #fff;opacity:1;
+        z-index: 9999;
     }
     
     #tui-tickets cookie-statement{
@@ -1898,6 +1916,7 @@
         margin: 0px;
         grid-column: 5 / span 6;
         color: #fff;opacity:1;
+        z-index: 9999;
     }
     
     #contact cookie-statement{
@@ -2059,6 +2078,7 @@
         margin: 0px;
         grid-column: 5 / span 6;
         color: #fff;opacity:1;
+        z-index: 9999;
     }
     
     #contact cookie-statement{
@@ -2294,6 +2314,7 @@
         margin: 0px;
         grid-column: 5 / span 6;
         color: #fff;opacity:1;
+        z-index: 9999;
     }
 
     #contact cookie-statement{
