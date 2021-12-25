@@ -885,7 +885,7 @@
         text-indent: 30%;
     }
     
-    #grid-container h3{
+    #grid-container h3::first-letter{
         margin: 0px;
         padding: 10px;
     }
@@ -1112,7 +1112,7 @@
         text-indent: 30%;
     }
     
-    #grid-container h3{
+    #grid-container h3::first-letter{
         margin: 0px;
         padding: 10px;
     }
@@ -1243,7 +1243,7 @@
         grid-area: tableTag;
     }
 
-    #tui-tickets tr{
+    #tui-tickets tr:first-child{
         background-color: #FF0 ;
     }
 
@@ -1405,21 +1405,21 @@
     }
     
     #tui-tickets table{
-    margin: 0px;
-    padding: 0px;
-    grid-area: tableTag;
+        margin: 0px;
+        padding: 0px;
+        grid-area: tableTag;
     }
 
-    #tui-tickets tr{
-    background-color: #FF0 ;
+    #tui-tickets tr:first-child{
+        background-color: #FF0 ;
     }
 
     #tui-tickets td:nth-child(2n){
-    background: #CFF;
+        background: #CFF;
     }
 
     #tui-tickets td:nth-child(2n+1){
-    background: #FFF;
+        background: #FFF;
     }
 
     #tui-tickets tr { border: 1px solid gray; }
