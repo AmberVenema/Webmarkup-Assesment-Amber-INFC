@@ -1230,14 +1230,14 @@
     padding: 10px;
 }
 
-#tui-tickets table > :first-child{
+#tui-tickets table{
     margin: 0px;
     padding: 0px;
     grid-column: 1 / 4;
     grid-area: tableTag;
 }
 
-#tui-tickets th{
+#tui-tickets tr> :first-child{
     background-color: #FF0 ;
 }
 
@@ -1374,6 +1374,11 @@
         text-indent: 30%;
     }
     
+    #tui-tickets h3{
+        margin: 0px;
+        padding: 10px;
+    }
+    
     #tui-tickets .drawer {
         display: none;
       }
@@ -1383,33 +1388,26 @@
         padding-bottom: 15px;
         height: 45px;
         background-color: greenyellow;
-        grid-column: 1 / 6;
         grid-area: titleTag;
     }
     
-    #tui-tickets table{
-        margin: 0px;
-        padding: 0px;
-        background-color: seagreen;
-        grid-column: 1 / 4;
-        grid-area: tableTag;
-    }
-    
-    #tui-tickets th{
-        display: none;
-    }
-    
-    #tui-tickets tr:nth-child(even){
-        background: purple;
-    }
-    
-    #tui-tickets tr:nth-child(odd){
-        background: palevioletred;
-    }
+#tui-tickets table{
+    margin: 0px;
+    padding: 0px;
+    grid-area: tableTag;
+}
 
-    #tui-tickets table, thead, tbody, th, td, tr { 
-        display: block; 
-    }
+#tui-tickets th> :first-child{
+    background-color: #FF0 ;
+}
+
+#tui-tickets td:nth-child(2n){
+    background: #CFF;
+}
+
+#tui-tickets td:nth-child(2n+1){
+    background: #FFF;
+}
 
     #tui-tickets thead tr { 
         position: absolute;
@@ -1421,6 +1419,8 @@
 
     #tui-tickets td { 
         border: none;
+        height: 200px;
+        width: 200px;
         border-bottom: 1px solid gray; 
         position: relative;
         padding-left: 50%; 
